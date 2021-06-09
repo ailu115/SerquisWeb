@@ -47,6 +47,8 @@ h2 {
 
 h3 {
     color: var(--text-medium);
+    font-weight: 400;
+    font-size: 2em;
 }
 
 p {
@@ -479,6 +481,29 @@ section {
         font-size: 2em;
         background: rgba (255, 255, 255, 0.2);
     }
+
+    .google-map {
+        height: 50%;
+        /* The height is 400 pixels */
+        /* width: 80%; */
+        /* The width is the width of the web page */
+      }
+      
+
+      .google-map iframe {
+          width: 100%;
+      }
+
+
+/* ABOUT */
+      .main-about{
+          display: flex;
+          flex-direction: column;
+      }
+
+
+
+
 }
 
 
@@ -602,6 +627,21 @@ section {
         justify-content: space-between;
     }
 
+
+    .main-about{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .info-about {
+        width: 50%;
+    }
+    .img-about {
+        width: 50%;
+    }
+    .img-about img {
+        width: 50%;
+    }
     
 }
 

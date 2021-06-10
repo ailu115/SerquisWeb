@@ -317,10 +317,13 @@
     }
     .photos-project .photo {
         margin: 1em auto;
+        
         /* height:400px; */
 
     }
-   
+    .photos-project .photo img{
+        margin: 0 auto;
+    }
 
 
     /* TAGS */
@@ -366,7 +369,7 @@
         display: flex;
         flex-direction: row;
         /* background: pink; */
-        margin: 0;
+        margin: 0 auto;
         justify-content: space-around;
     }
 
@@ -473,11 +476,15 @@
 
     }
     .photos-project{
-        display: flex;
+        /* display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: wrap; */
+        margin: 0 auto;
     }
-    
+    .photos-project .photo {
+        margin: 1em auto;
+        width: 100%;
+    }
       
     }
 

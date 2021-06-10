@@ -48,3 +48,22 @@ function initMap() {
     map: map,
   });
 }
+
+  // Toggle in about
+
+function toggleAbout() {
+  var x = document.getElementById("toggle-items");
+  var icon = document.getElementById("icon-arrow");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    icon.style.transform = "rotate(0.5turn)";
+  //  $("i").toggleClass("fa-caret-up");
+    
+  } else {
+    x.style.display = "none";
+    icon.style.transform = "rotate(0turn)";
+    // $("i").toggleClass("fa-caret-down");
+   
+  }
+
+}

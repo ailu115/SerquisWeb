@@ -40,9 +40,12 @@ h1 {
 }
 
 h2 {
-    color: white;
-    font-weight: 500;
-    font-size: 2em;
+    color: var(--primary-color);
+        font-size: 2em;
+        letter-spacing: 0;
+        font-weight: 400;
+        
+
 }
 
 h3 {
@@ -196,6 +199,12 @@ section {
         background-position: center;
         
     }
+    .landing-photo h2 {
+        color: white;
+        font-weight: 500;
+        font-size: 2em;
+    }
+    
     .section1 {
         /* grid-column: 1/5;
         grid-row: 2/3; */
@@ -248,7 +257,8 @@ section {
         color: var(--primary-color);
         text-align: center;
         text-transform: uppercase;
-        font-size: 1.6em;
+        font-size: 2em;
+        line-height: 1.5em;
         grid-column: 1/5;
     }
     .butons {
@@ -269,6 +279,14 @@ section {
     .button-small:hover {
         background: var(--text-light);
     }
+
+    .index-main h3 {
+        text-align: center;
+    }
+
+
+
+
     /* .parallax {
     background-attachment: fixed;
   background-repeat: no-repeat;
@@ -403,6 +421,7 @@ section {
     .toggle-info {
         grid-column: 1/5;
         background: white;
+        padding-bottom: 0.5em;
         margin-bottom: 1em;
         border-bottom: 0.5px solid var(--primary-color);
     }
@@ -412,27 +431,27 @@ section {
     }
 
 
-    .toggle-info a{
-       font-size: 0.7em;
+    .toggle-info .arrow-btn{
+       font-size: 0.9em;
        /* background:var(--primary-color); */
        /* opacity: 0.6; */
        border:1px solid var(--text-light);
         border-radius: 3em;
-        padding: 0.2em 1em 0.1em;
+        padding: 0.1em 1em 0em;
         /* color: white; */
     }
-    .toggle-info a:hover{
+    .toggle-info .arrow-btn:hover{
         background: var(--text-light);
         opacity: 0.8;
     }
-    #toggle-items {
+    .toggle-items {
         /* display: none; */
         /* background: green; */
         line-height: 1.2em;
         padding: 0.2em ;
 
     }
-    #toggle-items ul li {
+    .toggle-items ul li {
         list-style-type: disc;
         list-style-position: inside;
         padding: 0.2em ;
@@ -537,11 +556,11 @@ section {
         grid-column: 3/5;
         margin-left: 0.5em;
     }
-    #index-conversation{
+    .index-conversation{
         display: flex;
         flex-direction: column;
     }
-    #index-conversation h2 {
+    .index-conversation h2 {
         margin-bottom: 1em;
     }
 
@@ -617,7 +636,7 @@ section {
         width: 70%;
     }
     #container {
-        height: 35vh;
+        height: 40vh;
     }
 
     .landing h2 {

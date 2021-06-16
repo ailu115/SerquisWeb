@@ -51,8 +51,42 @@ function initMap() {
 
   // Toggle in about
 
-function toggleAbout() {
-  var x = document.getElementById("toggle-items");
+function toggleAwards () {
+  var x = document.getElementById("toggle-awards");
+  var icon = document.getElementById("icon-arrow");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    icon.style.transform = "rotate(0.5turn)";
+  //  $("i").toggleClass("fa-caret-up");
+    
+  } else {
+    x.style.display = "none";
+    icon.style.transform = "rotate(0turn)";
+    // $("i").toggleClass("fa-caret-down");
+   
+  }
+
+}
+
+function toggleAfiliations () {
+  var x = document.getElementById("toggle-afiliations");
+  var icon = document.getElementById("icon-arrow");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    icon.style.transform = "rotate(0.5turn)";
+  //  $("i").toggleClass("fa-caret-up");
+    
+  } else {
+    x.style.display = "none";
+    icon.style.transform = "rotate(0turn)";
+    // $("i").toggleClass("fa-caret-down");
+   
+  }
+
+}
+
+function toggleServices () {
+  var x = document.getElementById("toggle-services");
   var icon = document.getElementById("icon-arrow");
   if (x.style.display === "none") {
     x.style.display = "block";

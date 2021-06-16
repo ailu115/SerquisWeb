@@ -344,7 +344,6 @@
         text-align: center;
     }
     .photos-project {
-        /* background: #000; */
         grid-column: 1/5;
         height: auto;
         margin: 0 0%;
@@ -353,7 +352,7 @@
     .photos-project .photo {
         margin: 1em auto;
         
-        /* height:400px; */
+   
 
     }
     .photos-project .photo img{
@@ -574,17 +573,17 @@ display: flex;
         /* height: 80vh; */
         
     }
-    .our-work .landing {
-        /* height: 20vh; */
+    /* .our-work .landing {
+         height: 20vh; 
 
-    }
+    } */
 
-    .projects-nav {
-        /* height: 15vh; */
-    }
-    .project a {
-        /* height: 50vh; */
-    }
+    /* .projects-nav {
+        height: 15vh; 
+    } */
+    /* .project a {
+        height: 50vh;
+    } */
 
     .landing-project-example{
         /* width: 130%; */

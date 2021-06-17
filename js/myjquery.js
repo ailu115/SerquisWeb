@@ -85,19 +85,80 @@ function toggleAfiliations () {
 
 }
 
+// function toggleServices () {
+//   var x = document.getElementById("toggle-services");
+//   var icon = document.getElementById("icon-arrow");
+//   if (x.style.display === "none") {
+//     x.style.display = "block";
+//     icon.style.transform = "rotate(0.5turn)";
+//   //  $("i").toggleClass("fa-caret-up");
+    
+//   } else {
+//     x.style.display = "none";
+//     icon.style.transform = "rotate(0turn)";
+//     // $("i").toggleClass("fa-caret-down");
+   
+//   }
+
+// }
+
+// Animado
 function toggleServices () {
   var x = document.getElementById("toggle-services");
   var icon = document.getElementById("icon-arrow");
-  if (x.style.display === "none") {
-    x.style.display = "block";
+  if (x.style.height === "0px") {
+    x.style.height = "100%";
+    // x.style.height = "100%";
+    // x.style.transition = "height .2s";
     icon.style.transform = "rotate(0.5turn)";
   //  $("i").toggleClass("fa-caret-up");
     
   } else {
-    x.style.display = "none";
+    x.style.height = "0px";
+    // x.style.height = "0";
+    // x.style.transition = "height .2s .2s";
     icon.style.transform = "rotate(0turn)";
     // $("i").toggleClass("fa-caret-down");
    
   }
 
+}
+
+
+
+
+
+
+
+
+// TESTIMONIAL
+
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dots");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+    // setTimeout(showDivs, 1000);  NO logro hacer que sea automatico
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace("dot-active", "");
+  }
+  x[slideIndex-1].style.display = "block";  
+  
+  dots[slideIndex-1].className += " dot-active";
+  
 }

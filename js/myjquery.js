@@ -70,7 +70,7 @@ function toggleAwards () {
 
 function toggleAfiliations () {
   var x = document.getElementById("toggle-afiliations");
-  var icon = document.getElementById("icon-arrow");
+  var icon = document.getElementById("icon-arrow-afiliations");
   if (x.style.display === "none") {
     x.style.display = "block";
     icon.style.transform = "rotate(0.5turn)";

@@ -1,3 +1,13 @@
+:root {
+    --primary-color: #8f9427;
+    --primary-color-dark: #545726;
+    --secondary-color: #e39410;
+    --text-dark: #3d3c3c;
+    --text-medium: #6d6c6d;
+    --text-light: #e0e1e3;
+    --font-sans: neue-kabel, futura, sans-serif;
+}
+
 @media screen and (min-width: 1px) {
     button,
     input[type="submit"],
@@ -193,9 +203,25 @@
     #logo {
         grid-column: 1/3;
         /* background: #000; */
-        align-self: center;
-        width: 100%;
+        /* align-self: center; */
+        /* height: 100%; */
+        width: 100%; 
     }
+    #logo a{
+        /* height: 100%; */
+        /* align-self: center; */
+    }
+    /* #logo a picture {
+        height: 100%; 
+        width: 100%;  
+        padding: 10px;
+        align-self: center;
+    } */
+#logo img{
+    /* height: 100%; */
+        /* width: ; */
+} 
+
     #menu-toggle {
         grid-column: 4/5;
         place-self: center;
@@ -228,11 +254,14 @@
     }
     #logo {
         /* background: blue; */
-        width: 25%;
+        /* width: 25%; */
+        
         align-self: center;
     }
     #logo img {
-        width: 100%;
+        /* width: 100%; */
+        height: 8vh;
+        width: auto;
         /* align-self: center; */
     }
     nav {
@@ -268,7 +297,7 @@
     nav ul li a {
         font-size: 1em;
         font-weight: 300;
-        color: #8f9427;
+        color:var(--primary-color);
         /* text-decoration: underline; */
     }
    

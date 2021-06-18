@@ -29,7 +29,24 @@
 
     <header>
         <div id="header-container">
-            <span id="logo"><a href="index.html"><img src="img/Logo/logo-typo serquislogo left small.png" alt="logo serquis + Associates Landscape Architecture"></a></span>
+            <span id="logo">
+            <a href="index.html">
+                <picture>
+                    <source 
+                      srcset="img/Logo/logo-typo serquislogo left small.png"
+                      media="(min-width: 0px)"
+                    />
+                    <source 
+                      srcset="img/Logo/Icon-Serquis.png"
+                      media="(min-width: 750px)"
+                    />
+                    <img 
+                      src="img/Logo/logo-typo serquislogo left small.png" 
+                      alt="serquis-logo"
+                    />
+                  </picture>
+                <!-- <img src="img/Logo/logo-typo serquislogo left small.png" alt="logo serquis + Associates Landscape Architecture"> -->
+            </a></span>
 
             <div id="menu-toggle" class="burger">
                 <div id="hamburger">
@@ -58,7 +75,9 @@
     </header>
     <div id="master-container" class="index-main">
         <div  class="landing">
-            <h1>Connecting people with places</h1>
+           
+            <h1> <img src="img/Logo/S+A-Logo-Text only.svg" alt="">Connecting people with places</h1>
+            <!-- <h2>Serquis + Associates Landscape Architecture</h2> -->
             <h2>Serquis + Associates Landscape Architecture</h2>
         </div>
         <section id="container" class="landing-photo right overflow section1 parallax">

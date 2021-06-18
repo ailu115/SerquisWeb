@@ -708,3 +708,23 @@ display: flex;
 
 
 }
+
+/* IMAGE CHANGE ON MOBILE AND DESKTOP */
+
+@media (max-width: 750px) {
+    .project-mobile {
+        display: block;
+    }
+    .project-desktop {
+        display: none;
+    }
+}
+
+@media (min-width: 751px) {
+    .project-mobile {
+        display: none;
+    }
+    .project-desktop {
+        display: block;
+    }
+}

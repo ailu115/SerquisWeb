@@ -109,14 +109,14 @@ function toggleServices () {
   if (x.style.height === "0px") {
     x.style.height = "100%";
     // x.style.height = "100%";
-    // x.style.transition = "height .2s";
+    x.style.transition = "height .2s";
     icon.style.transform = "rotate(0.5turn)";
   //  $("i").toggleClass("fa-caret-up");
     
   } else {
     x.style.height = "0px";
     // x.style.height = "0";
-    // x.style.transition = "height .2s .2s";
+    x.style.transition = "height .2s";
     icon.style.transform = "rotate(0turn)";
     // $("i").toggleClass("fa-caret-down");
    
@@ -162,3 +162,7 @@ function showDivs(n) {
   dots[slideIndex-1].className += " dot-active";
   
 }
+
+
+// AOS ?
+AOS.init();

@@ -94,7 +94,7 @@ section {
 
   /* LANDING  */
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
   }
   p {
     font-size: 0.9em;
@@ -497,8 +497,12 @@ section {
     justify-content: space-around;
     padding: 1em;
   }
-  .houzz-badges table {
-    border: 0;
+
+
+  .houzz-badges a {
+    padding:0 10px 20px 0;
+    text-decoration: none;
+    border-bottom: 0px;
   }
 
   .contact {
@@ -545,8 +549,9 @@ section {
     padding: 0.1em 0.5em;
   }
   .about .landing h2 {
-    font-size: 1rem;
-    text-align: left;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 2rem;
   }
 
   .about .right {
@@ -629,7 +634,19 @@ section {
     list-style-type: disc;
     list-style-position: inside;
     padding: 0.2em;
+
+
   }
+
+
+  .about .houzz-badges{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  .about .houzz-badges a{
+    padding:0 10px 20px 0;
+  }
+
 }
 
 /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */
@@ -724,6 +741,14 @@ section {
   }
 
   /* ABOUT */
+
+
+  .about .landing h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 2rem;
+    
+  }
 
   .right .info-about {
     width: 100%;

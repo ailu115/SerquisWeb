@@ -10,8 +10,10 @@
     <link rel="stylesheet" href="https://use.typekit.net/sud0zuo.css" />
 
     <link rel="stylesheet" href="css/trongate.css" />
-    <script src="https://kit.fontawesome.com/967841f81f.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <!-- <script src="https://kit.fontawesome.com/967841f81f.js" crossorigin="anonymous"></script> -->
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" /> -->
+    <link rel="stylesheet"
+        href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/style.css" />
@@ -51,11 +53,11 @@
     </header>
     <div id="master-container" class="our-work">
         <div class="landing">
-            <h1>Projects</h1>
+            <h1 class="right overflow">Featured Developments</h1>
             <!-- <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p> -->
         </div>
 
-        <section id="" class="projects-nav">
+        <section id="" class="projects-nav overflow">
             <ul>
                 <li class="active">
                     <a href="#">
@@ -84,13 +86,14 @@
             </ul>
         </section>
 
-        <section class="project">
+        <section class="project" data-aos="fade-left"
+        data-aos-anchor-placement="top-center" data-aos-duration="1500">
             <a href="ProjectExample.html" id="">
                 <div class="project-title">
                     <h2>Trailhead</h2>
                 </div>
                 <div class="hero-img">
-                    <!-- <div class="hero-img" style="background-image: url('');"> -->
+                  
                     <img src="img/Projects/922 shoofly trailhead serquis shadow at trailhead-2400px 72ppi.jpeg"
                         alt="" />
                 </div>
@@ -106,7 +109,8 @@
                 </div>
             </a>
         </section>
-        <section class="project">
+        <section class="project" data-aos="fade-left"
+        data-aos-anchor-placement="top-center" data-aos-duration="1500">
             <a href="ProjectExample2.html" id="">
                 <div class="project-title">
                     <h2>Contemporary <br />Home</h2>
@@ -138,14 +142,14 @@
         </section>
         <section class="border-top">
             <div class="pagination">
-                <a href="#">&laquo;</a>
+                <a href="#"><i class="las la-angle-double-left"></i></a>
                 <a href="#">1</a>
                 <a class="active" href="#">2</a>
                 <a href="#">3</a>
                 <a href="#">4</a>
                 <a href="#">5</a>
                 <a href="#">6</a>
-                <a href="#">&raquo;</a>
+                <a href="#"><i class="las la-angle-double-right"></i></a>
             </div>
         </section>
     </div>
@@ -206,7 +210,9 @@
             rights Reserved
         </p>
     </footer>
-    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/aos.js"></script>
+
 
     <script src="js/myjquery.js"></script>
 </body>

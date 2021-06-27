@@ -1,16 +1,7 @@
 {
-	"folders": [
-		{
-			"path": ".."
-		},
-		{
-			"path": "../../../../../Volumes/Ailu ssd/UTN/clase21/sitio_transportes"
-		},
-		{
-			"path": "../../WEB-PORTFOLIO9php-fancybox"
-		}
-	],
-	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "SerquisWeb"
-	}
+    "folders": [
+        {
+            "path": ".."
+        }
+    ]
 }

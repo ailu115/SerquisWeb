@@ -215,7 +215,7 @@ section {
         rgba(212, 212, 211, 0.1),
         rgba(87, 85, 84, 0.2)
       ),
-      url("../img/atnight-frontpatio32.jpg");
+      url("../img/Landing/Trailhead-72.jpg");
     text-align: right;
     height: 60vh;
     z-index: -100;
@@ -226,7 +226,7 @@ section {
         rgba(87, 85, 84, 0.1),
         rgba(83, 83, 80, 0.2)
       ),
-      url("../img/Design-GabriellaMarks-01-1200px-72ppi.jpeg");
+      url("../img/landing/Design-GabriellaMarks-01-1200px-72ppi.jpeg");
 
     height: 40vh;
   }
@@ -236,7 +236,7 @@ section {
         rgba(87, 85, 84, 0.2),
         rgba(212, 212, 211, 0.1)
       ),
-      url("../img/People-GabriellaMarks-01-1200px-72ppi.jpeg");
+      url("../img/landing/People-GabriellaMarks-01-1200px-72ppi.jpeg");
     text-align: right;
     margin-right: -5%;
 
@@ -338,10 +338,11 @@ section {
     text-align: center;
   }
 
-  .services-section .toggle-info .arrow-btn i {
+  .services-section .toggle-info .arrow-btn svg {
     font-size: 1.5em;
     font-weight: 300;
-    color: white;
+   
+    fill: white;
 
     width: 1.5em;
     height: 1.5em;
@@ -350,7 +351,7 @@ section {
     text-align: center;
     line-height: 1em;
     vertical-align: middle;
-    margin-top: -0.2em;
+    margin-top: -0.2em auto;
   }
 
   .services {
@@ -822,7 +823,7 @@ line-height: 1.5em;
     height: 100% !important;
   }
   .services-section .toggle-info .arrow-btn {
-    /* display: none; */
+    display: none;
   }
 
   .services-section .toggle-info {

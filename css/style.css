@@ -243,7 +243,6 @@ section {
     height: 60vh;
   }
 
-  
   .info {
     grid-column: 1/5;
     margin: 0 auto;
@@ -336,7 +335,7 @@ section {
   .services-section .toggle-info .arrow-btn svg {
     font-size: 1.5em;
     font-weight: 300;
-   
+
     fill: white;
 
     width: 1.5em;
@@ -494,9 +493,8 @@ section {
     padding: 1em;
   }
 
-
   .houzz-badges a {
-    padding:0 10px 20px 0;
+    padding: 0 10px 20px 0;
     text-decoration: none;
     border-bottom: 0px;
   }
@@ -505,19 +503,19 @@ section {
     text-align: left;
     padding: 0.1em 5%;
     margin: 0 0 0 -5%;
-   
   }
   .contact {
     display: flex;
     flex-direction: column;
   }
-.contact h3, .location h3{
-  color: var(--primary-color);
-text-align: left;
-text-transform: uppercase;
-font-size: 1.2rem;
-line-height: 1.5em;
-}
+  .contact h3,
+  .location h3 {
+    color: var(--primary-color);
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+  }
   .contact-photo {
     width: 100%;
     height: 20vh;
@@ -551,7 +549,7 @@ line-height: 1.5em;
     grid-template-rows: auto;
   }
 
-  .about .landing h1{
+  .about .landing h1 {
     font-size: 2rem;
     text-align: left;
     padding: 0.1em 0.5em;
@@ -642,19 +640,15 @@ line-height: 1.5em;
     list-style-type: disc;
     list-style-position: inside;
     padding: 0.2em;
-
-
   }
 
-
-  .about .houzz-badges{
+  .about .houzz-badges {
     flex-wrap: wrap;
     justify-content: flex-start;
   }
-  .about .houzz-badges a{
-    padding:0 10px 20px 0;
+  .about .houzz-badges a {
+    padding: 0 10px 20px 0;
   }
-
 }
 
 /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */
@@ -678,7 +672,6 @@ line-height: 1.5em;
   #master-container {
     width: 80%;
     margin-top: 12vh;
-    
   }
   .landing {
     margin-bottom: 2em;
@@ -752,12 +745,10 @@ line-height: 1.5em;
 
   /* ABOUT */
 
-
   .about .landing h2 {
     font-size: 1.5rem;
     text-align: left;
     line-height: 2rem;
-    
   }
 
   .right .info-about {
@@ -866,10 +857,11 @@ line-height: 1.5em;
     width: 35%;
     padding-right: 1em;
   }
-  .contact h3, .location h3{
+  .contact h3,
+  .location h3 {
     font-size: 1.5rem;
   }
- 
+
   .contact-photo {
     width: 65%;
 
@@ -894,12 +886,12 @@ line-height: 1.5em;
     /* border: 0px; */
   }
 
-  .maps{
+  .maps {
     display: flex;
   }
-.multi-modal{
-  width: 50%;
-}
+  .multi-modal {
+    width: 50%;
+  }
   .google-map {
     height: 40vh;
     width: 50%;

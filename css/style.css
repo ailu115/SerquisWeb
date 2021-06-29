@@ -243,12 +243,7 @@ section {
     height: 60vh;
   }
 
-  .parallax {
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-
-    background-color: black;
-  }
+  
   .info {
     grid-column: 1/5;
     margin: 0 auto;

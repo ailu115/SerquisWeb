@@ -159,6 +159,7 @@ align-self: flex-end;
 
 .project {
   position: relative;
+   max-height: 280px;
 }
 .project a {
   margin: 0;
@@ -168,11 +169,13 @@ align-self: flex-end;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-content: flex-end;
 }
 
 .project a:hover h2 {
   color: var(--primary-color);
 }
+
 .project .project-title {
   text-align: left;
 
@@ -183,25 +186,24 @@ align-self: flex-end;
   justify-content: flex-start;
   align-items: flex-end;
   overflow: hidden;
+ 
 }
-
 .project .project-title h2 {
   color: var(--text-dark);
-font-size: 2rem;
+font-size: 1.8rem;
+line-height: 1.2em;
   bottom: 0;
   writing-mode: vertical-rl;
   transform: rotate(180deg);
 
-  margin: 0;
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  padding: 0;
+  height: 100%;
+  max-height: 216px;
 
-  max-height: 38vh;
+ 
 }
 
 .project .hero-img {
-  align-self: start;
+  align-self: end;
   overflow: hidden;
   background-repeat: no-repeat;
 
@@ -211,10 +213,11 @@ font-size: 2rem;
 
   object-fit: contain;
   width: 75%;
+  
 }
 .project .hero-img img {
   max-width: 100%;
-
+  
   object-fit: contain;
 }
 
@@ -309,7 +312,7 @@ font-size: 2rem;
   margin: 1em auto;
   padding: 50vh 0em;
   width: 100%;
-  font-size: 3em;
+  font-size: 3rem;
 }
 .project-example-description {
   grid-column: 1/5;
@@ -352,7 +355,7 @@ font-size: 2rem;
 }
 
 .tags {
-  font-size: 0.9em;
+  font-size: 1rem;
 
   background-color: var(--text-light);
   border-radius: 1em;
@@ -408,7 +411,7 @@ font-size: 2rem;
 }
 .publication p {
   padding: 0;
-  font-size: 0.9em;
+  font-size: 1rem;
 }
 
 .news-example .landing {
@@ -416,7 +419,12 @@ font-size: 2rem;
 }
 .news-example h1 {
   margin: 0.5em 0;
-  padding: 0;
+  padding: 0.2em 0.5em;
+  font-size: 1.5rem;
+  background-color:#fafaf8;
+  color: var(--primary-color);
+  text-align: center;
+  font-weight: 500;
 }
 .news-content {
   margin: 0 auto;
@@ -450,6 +458,7 @@ font-size: 2rem;
 
   .project .project-title h2{
       font-size: 2.5rem;
+      line-height: 1.2em;
   }
   .landing-project-example {
     background-image: cover;
@@ -461,10 +470,10 @@ font-size: 2rem;
     margin: 1em auto;
     padding: 60vh 3em;
     width: 100%;
-    font-size: 3em;
+    font-size: 3rem;
   }
   .project {
-    max-height: 800px;
+    max-height: 450px;
     overflow: hidden;
   }
   .project a {
@@ -478,17 +487,25 @@ font-size: 2rem;
   .project .project-title {
     width: 30%;
     align-self: flex-end;
+   
+
+  }
+  .project .project-title h2{
+    height: 100%;
+    max-height: 350px;
   }
 
   .project .hero-img {
     width: 70%;
     overflow: hidden;
     display: block;
+    align-self: center;
   }
   .project .hero-img img {
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    /* object-fit: contain; */
+    align-self: center;
   }
 
   .project-pagination .pagination .pagination-tag {
@@ -537,36 +554,45 @@ font-size: 2rem;
         
     }
   .project {
-    position: relative;
-    height: auto;
+    /* position: relative; */
+    /* height: auto; */
+    /* max-height: 450px; */
   }
   .project a {
    
+    height: 100%;
     max-height: 450px;
+   
   }
   .project .project-title {
     width: 30%;
+    /* margin-bottom: 1em; */
   }
 
   .project .hero-img {
     width: 70%;
+    /* display: flex;
+    justify-content: center;
+    align-content: center; */
+    background-position: center center;
   }
+
 
   .project .project-title h2 {
     /* writing-mode: initial;
     transform: rotate(0deg); */
     font-size: 3rem;
     margin: 0;
-    margin-left: 0.4em;
+    /* margin-left: 0.4em; */
     padding: 0;
-    padding-bottom: 0.5em;
-    padding-left: 1em;
-    
-
     display: block;
+ 
+      height: 100%;
+      max-height: 450px;
+ 
   }
   .project:nth-child(even) a .project-title h2 {
-    padding-left: 0.5em;
+    padding-left: 0.6em;
     padding-right: 0;
   }
 
@@ -589,12 +615,16 @@ font-size: 2rem;
 
   /* NEWS */
 
+
   .publications-container {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto;
     gap: 1em;
+  }
+  .news-example h1{
+    font-size: 1.8rem;
   }
 }
 
@@ -614,12 +644,23 @@ font-size: 2rem;
         width: 145%;
     }
   .project {
-    position: relative;
+    /* position: relative; */
     margin-bottom: 2em;
+  }
+  .project a{
+    height: 100%;
+    max-height: 450px;
+
   }
   .project .project-title{
       width: 15%;
+      
   }
+  .project .project-title h2{
+    height: 100%;
+    max-height: 450px;
+  }
+
   .project .hero-img{
       width: 85%;
   }
@@ -641,9 +682,19 @@ font-size: 2rem;
 
 @media (min-width: 1200px) {
   .project .hero-img img {
-    margin-top: -5em;
+    /* margin-top: -5em; */
   }
+  .project a{
+    height: 100%;
+   
 
+  }
+  
+  .project .project-title h2{
+    height: 100%;
+    /* max-height: 500px; */
+    
+  }
 
 
   /* NEWS */
@@ -662,6 +713,21 @@ font-size: 2rem;
     }
     .projects-nav ul{
         height: 50px;
+    }
+    .project{
+      max-height: 800px;
+    }
+    .project a{
+      height: 100%;
+     max-height: 800px;
+  
+    }
+    
+    .project .project-title h2{
+      height: 100%;
+      max-height: 800px;
+      font-size: 4rem;
+      
     }
 }
 

@@ -1,0 +1,13 @@
+.parallax {
+    /* background-attachment:scroll; */
+    background-position: fixed;
+    background-repeat: no-repeat; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: -webkit-sticky; /* Safari */
+  /* position: fixed; */
+  /* top:0; */
+
+    background-color: black;
+  }

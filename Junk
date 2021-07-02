@@ -11,3 +11,74 @@
 
     background-color: black;
   }
+
+
+   <style>
+            /* .index-main{
+                height: 100vh;
+                overflow: hidden;
+                overflow-y: auto;
+                perspective: 3px;
+            }
+            section{
+                position: relative;
+            }
+            section.landing-photo{
+                background-position: center center;
+  transform: translateZ(-1px) scale(1.5);
+  /* Force the background image to fill the whole element. */
+  /* background-size: cover; */
+  /* Keep the image from overlapping sibling elements. */
+  /* z-index: -1; */
+  /* height: 100vh; */
+            /* } */
+            .parallax{
+    /* position: -webkit-sticky; Safari */
+  /* position: sticky; */
+  top: 0;
+  z-index: 0;
+  /* margin-top: -100vh; */
+  width: 100vw;
+ 
+  }
+  .landing-photo{
+      position: relative;
+     
+  }
+  .img-container{
+      
+      overflow: hidden;
+      position: relative;
+  }
+  .single-img {
+    width: 100vw;
+   
+   height: 100vh;
+    background-position: cover;
+      /* position: fixed; */
+      top: 0;
+      left: 0;
+     
+      
+  }
+        </style> 
+
+         <div class="img-container" style="">
+                <img src="img/Landing/Trailhead-72.jpg" alt="" class="single-img" style=" background-image: linear-gradient(
+                    -45deg,
+                    rgba(212, 212, 211, 0.1),
+                    rgba(87, 85, 84, 0.2)
+                  ) ">
+            </div>
+
+
+              <div class="img-container" style="width: 100%; height: 100%;">
+                <img src="img/Landing/Trailhead-72.jpg" alt="" class="single-img" style=" background-image: linear-gradient(
+                    -45deg,
+                    rgba(212, 212, 211, 0.1),
+                    rgba(87, 85, 84, 0.2)
+                  );
+                  width: 100%;
+                  height: 100%;
+                  " >
+            </div>

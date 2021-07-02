@@ -107,16 +107,16 @@ function toggleServices () {
   var x = document.getElementById("toggle-services");
   var icon = document.getElementById("icon-arrow");
   if (x.style.height === "0px") {
-    x.style.height = "100%";
+    x.style.height = "auto";
     // x.style.height = "100%";
-    x.style.transition = "height .2s";
+    x.style.transition = "height ";
     icon.style.transform = "rotate(0.5turn)";
   //  $("i").toggleClass("fa-caret-up");
     
   } else {
     x.style.height = "0px";
     // x.style.height = "0";
-    x.style.transition = "height .2s";
+    x.style.transition = "height ";
     icon.style.transform = "rotate(0turn)";
     // $("i").toggleClass("fa-caret-down");
    

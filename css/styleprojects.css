@@ -335,7 +335,7 @@
 .publications-container {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: 0.8em;
 }
@@ -448,6 +448,10 @@
 
   .project-pagination .pagination .pagination-tag {
     display: inline-block;
+  }
+  .publications-container {
+   
+    grid-template-columns: 1fr 1fr;
   }
 }
 

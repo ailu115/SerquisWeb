@@ -101,7 +101,7 @@ section {
     font-weight: 300;
     padding: 0.5em 0.8em;
   }
-  .landing-link {
+  /* .landing-link {
     color: white;
     padding: 0.3em 0.3em;
     border-radius: 0em;
@@ -113,7 +113,7 @@ section {
     color: var(--text-medium);
     border-radius: 0.2em;
     transition: 0.2s;
-  }
+  } */
   #master-container {
     width: 90%;
     margin: 10vh auto 0;
@@ -151,6 +151,7 @@ section {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
+    /* display: flex; */
   }
   .overflow {
     width: 105%;
@@ -164,13 +165,15 @@ section {
     margin-left: -7%;
   }
   .inner-right {
-    grid-column: 3/5;
+    /* grid-column: 3/5; */
     justify-self: end;
     align-self: end;
-    padding: 0 0 2em;
+    /* padding: 0 0 2em; */
+    /* padding-right: 10%; */
     margin: 0;
     width: auto;
-    text-align: left;
+    text-align: right;
+    
   }
   .inner-left {
     grid-column: 1/3;
@@ -179,11 +182,12 @@ section {
     margin: 0;
     text-align: left;
   }
-  .landing-link {
+  /* .landing-link {
     border: 1px solid white;
     background: rgba(143, 148, 39, 1);
     color: white;
-  }
+  } */
+  
   .landing-photo {
     height: 100%;
     background-size: cover;
@@ -210,39 +214,25 @@ section {
   }
 
   .section1 {
-    background-image: linear-gradient(
-        -45deg,
-        rgba(212, 212, 211, 0.1),
-        rgba(87, 85, 84, 0.2)
-      ),
-      url("../img/Landing/Trailhead-72.jpg");
+   
     text-align: right;
     height: 60vh;
     z-index: -100;
   }
   .section2 {
-    background-image: linear-gradient(
-        -45deg,
-        rgba(87, 85, 84, 0.1),
-        rgba(83, 83, 80, 0.2)
-      ),
-      url("../img/landing/Design-GabriellaMarks-01-1200px-72ppi.jpeg");
+   
 
     height: 40vh;
   }
   .section3 {
-    background-image: linear-gradient(
-        -45deg,
-        rgba(87, 85, 84, 0.2),
-        rgba(212, 212, 211, 0.1)
-      ),
-      url("../img/landing/People-GabriellaMarks-01-1200px-72ppi.jpeg");
+  
     text-align: right;
     margin-right: -5%;
 
     height: 60vh;
   }
 
+  
   .info {
     grid-column: 1/5;
     margin: 0 auto;
@@ -259,16 +249,26 @@ section {
   .border-top {
     border-top: 1px solid var(--text-medium);
   }
+
   .border-bottom {
     border-bottom: 1px solid var(--text-medium);
   }
 
   .conversation {
-    padding: 1em 0 2em;
-    margin: 1em 0em 0em;
+   padding: 1em 0 1.5em;
+    
+    background-color: var(--primary-color);
+      
+      margin-top: 1em;
+      margin-right: -5%;
+      margin-left: -5%;
+      width: 110%;
+      padding: 1em 5%;
+    
   }
+  
   .conversation h2 {
-    color: var(--primary-color);
+    color: white;
     text-align: center;
     text-transform: uppercase;
     font-size: 2em;
@@ -276,9 +276,11 @@ section {
     grid-column: 1/5;
   }
   .conversation p {
+    color: white;
     text-align: center;
     margin-top: 1em;
   }
+ 
   .butons {
     grid-column: 1/5;
     display: flex;
@@ -297,88 +299,25 @@ section {
   .button-small:hover {
     background: var(--text-light);
   }
+  .conversation .button-small{
+    color: white;
+
+  }
+  .conversation .button-small:hover{
+    color: white;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: 0.2s;
+  }
 
   .index-main h3 {
     text-align: center;
   }
-
-  /* SERVICES */
-
-  .services-section {
-    background-color: var(--primary-color);
-    margin-right: -5%;
-    margin-left: -5%;
-    width: 110%;
-  }
-  .services-section .toggle-info {
-    width: 90%;
-    margin: 1em auto;
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 1em 0 2em;
-  }
-  .services-section .toggle-info a {
-    width: auto;
-  }
-
-  .services-section .toggle-info h3 {
+  .link-inverted {
     color: white;
-
-    margin: 0;
-  }
-  .services-section .toggle-info p {
-    color: white;
-    margin: 0 auto;
-    text-align: center;
+    text-decoration: underline;
   }
 
-  .services-section .toggle-info .arrow-btn svg {
-    font-size: 1.5em;
-    font-weight: 300;
-
-    fill: white;
-
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0.2em;
-
-    text-align: center;
-    line-height: 1em;
-    vertical-align: middle;
-    margin-top: -0.2em auto;
-  }
-
-  .services {
-    background: white;
-    line-height: 1.2em;
-    overflow: hidden;
-  }
-  .toggle-services {
-    height: 0em;
-    transition: 0.5s ease-in-out;
-  }
-
-  .service {
-    padding: 1em 0.8em;
-    text-align: left;
-  }
-
-  .services strong {
-    color: var(--primary-color);
-    font-size: 1.2em;
-    line-height: 1.5em;
-    margin-bottom: 0.2em;
-  }
-  .services ul li {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding: 0.2em;
-  }
-
-  .services ul {
-    margin: 0.8em 0.2em;
-    text-align: left;
-  }
+ 
 
   /* TESTIMONIAL */
 
@@ -649,6 +588,84 @@ section {
   .about .houzz-badges a {
     padding: 0 10px 20px 0;
   }
+   /* SERVICES */
+
+   /* .services-section {
+    background-color: var(--primary-color);
+    margin-right: -5%;
+    margin-left: -5%;
+    width: 110%;
+  }
+  .services-section .toggle-info {
+    width: 90%;
+    margin: 1em auto;
+    background-color: var(--primary-color);
+    text-align: center;
+    padding: 1em 0 2em;
+  }
+  .services-section .toggle-info a {
+    width: auto;
+  }
+
+  .services-section .toggle-info h3 {
+    color: white;
+
+    margin: 0;
+  }
+  .services-section .toggle-info p {
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+  } */
+
+  /* .services-section .toggle-info .arrow-btn svg {
+    font-size: 1.5em;
+    font-weight: 300;
+
+    fill: white;
+
+    width: 1.5em;
+    height: 1.5em;
+    padding: 0.2em;
+
+    text-align: center;
+    line-height: 1em;
+    vertical-align: middle;
+    margin-top: -0.2em auto;
+  } */
+
+  .services {
+    background: white;
+    line-height: 1.2em;
+    overflow: hidden;
+    display: block;
+  }
+  .toggle-services {
+    height: 0em;
+    transition: 0.5s ease-in-out;
+  }
+
+  .service {
+    padding: 1em 0.8em;
+    text-align: left;
+  }
+
+  .services strong {
+    color: var(--primary-color);
+    font-size: 1.2em;
+    line-height: 1.5em;
+    margin-bottom: 0.2em;
+  }
+  .services ul li {
+    list-style-type: disc;
+    list-style-position: inside;
+    padding: 0.2em;
+  }
+
+  .services ul {
+    margin: 0.8em 0.2em;
+    text-align: left;
+  }
 }
 
 /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */
@@ -797,27 +814,33 @@ section {
     margin-bottom: 1em;
     justify-content: center;
     align-items: center;
-  }
-
-  .services-section {
-    background: var(--primary-color);
     width: 124%;
     margin-right: -12%;
     margin-left: -12%;
   }
-  .services-section #toggle-services {
+
+  .services-section {
+    /* background: var(--primary-color); */
+    width: 100%;
+    grid-column: 1/5;
+  
+  }
+  .services-section #toggle-services{
     height: 100% !important;
   }
+  
   .services-section .toggle-info .arrow-btn {
     display: none;
   }
 
   .services-section .toggle-info {
     display: flex;
+    justify-content: space-between;
   }
   .services-title {
-    border-right: 1px solid white;
-    padding: 0 1em;
+    /* border-right: 1px solid var(--text-medium); */
+    width: 30%;
+    /* padding: 0 1em; */
   }
   .services-section .toggle-info h3 {
     text-align: left;
@@ -834,15 +857,15 @@ section {
     width: 100%;
     padding: 0;
     margin: 0 auto;
-    background-color: rgba(143, 148, 39, 0.5);
+    /* background-color: rgba(143, 148, 39, 0.5); */
   }
 
   .service {
     width: 50%;
-    color: white;
+    /* color: white; */
   }
   .service strong {
-    color: white;
+    /* color: white; */
   }
 
   .contact {
@@ -963,9 +986,9 @@ section {
   h2 {
     font-size: 2.2em;
   }
-  .landing-link {
+  /* .landing-link {
     font-size: 1.2em;
-  }
+  } */
 
   .overflow {
     width: 125%;
@@ -999,6 +1022,11 @@ section {
     width: 100%;
     grid-column: 3/5;
     grid-row: 1/2;
+  }
+  .conversation{
+    width: 144%;
+    margin-right: -20%;
+    margin-left: -22%;
   }
 
   .services-section {

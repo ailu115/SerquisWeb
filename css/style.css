@@ -555,7 +555,7 @@ section {
 
   .about .toggle-info .arrow-btn i {
     font-size: 1em;
-    color: var(--text-medium);
+    /* color: var(--text-medium); */
 
     border-radius: 50%;
     width: 1.5em;

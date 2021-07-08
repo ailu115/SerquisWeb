@@ -82,3 +82,67 @@
                   height: 100%;
                   " >
             </div>
+
+
+
+
+
+            // Toggle in about
+
+function toggleAwards () {
+  var x = document.getElementById("toggle-awards");
+  var icon = document.getElementById("icon-arrow");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    icon.style.transform = "rotate(0.5turn)";
+  //  $("i").toggleClass("fa-caret-up");
+    
+  } else {
+    x.style.display = "none";
+    icon.style.transform = "rotate(0turn)";
+    // $("i").toggleClass("fa-caret-down");
+   
+  }
+
+}
+
+function toggleAfiliations () {
+  var x = document.getElementById("toggle-afiliations");
+  var icon = document.getElementById("icon-arrow-afiliations");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    icon.style.transform = "rotate(0.5turn)";
+  //  $("i").toggleClass("fa-caret-up");
+    
+  } else {
+    x.style.display = "none";
+    icon.style.transform = "rotate(0turn)";
+    // $("i").toggleClass("fa-caret-down");
+   
+  }
+
+}
+
+
+
+// Animado
+function toggleServices () {
+  var x = document.getElementById("toggle-services");
+  var icon = document.getElementById("icon-arrow");
+  if (x.style.height === "0px") {
+    x.style.height = "auto";
+    // x.style.height = "100%";
+    x.style.transition = "height ";
+    icon.style.transform = "rotate(0.5turn)";
+  //  $("i").toggleClass("fa-caret-up");
+    
+  } else {
+    x.style.height = "0px";
+    // x.style.height = "0";
+    x.style.transition = "height ";
+    icon.style.transform = "rotate(0turn)";
+    // $("i").toggleClass("fa-caret-down");
+   
+  }
+
+}

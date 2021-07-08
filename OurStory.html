@@ -144,23 +144,20 @@
            
         </section>
         <section id="container-about" class="main-about">
+            
            
-             <div class="toggle-info  ">
-                <div class="services-title">
+                <div class="toggle-info services ">
+    
                     <h3>Services 
-                        <a id="iconarrow" class="arrow-btn" onclick="toggleServices()">
-                           
-                                <i id="icon-arrow" class="las la-angle-down" style="transform: rotate(0turn)"></i>
-                         
-                            <!-- <svg id="icon-arrow" viewBox="0 0 32 32">
-                                <path d="M 4.21875 10.78125 L 2.78125 12.21875 L 15.28125 24.71875 L 16 25.40625 L 16.71875 24.71875 L 29.21875 12.21875 L 27.78125 10.78125 L 16 22.5625 Z"/>
-                            </svg> -->
+                    <a id="iconarrow" class="arrow-btn" onclick="toggleAbout('services')">
+                            <i id="icon-arrow-services" class="las la-angle-down" style="transform: rotate(0turn)"></i>            
                         </a>
                     </h3>
+                     
+                 <div id="services" class="toggle-items" style="display: none;">
+               
 
-                    <!-- <p>Here a summary of services we offer</p> -->
-                </div>
-                <div id="toggle-services" class=" services" style=" height:0px;">
+               
 
                     <div class="service">
                         <strong>Design &amp; Project Management for</strong>
@@ -180,16 +177,15 @@
             
         
             <div class="toggle-info awards">
-                <h3>
-                    Awards
-                    <a id="iconarrow" class="arrow-btn" onclick="toggleAwards()">
-                        <i id="icon-arrow" class="las la-angle-down" style="transform: rotate(0turn)"></i>
+                <h3>Awards
+                    <a id="iconarrow" onclick="toggleAbout('awards')">
+                        <i id="icon-arrow-awards" class="las la-angle-down " style="transform: rotate(0turn)"></i>
                     </a>
                 </h3>
-                <div id="toggle-awards" class="toggle-items" style="display: none">
+                <div id="awards" class="toggle-items" style="display: none">
                     <ul>
                         <li>
-                            <b>2018</b><a href="#"> – Haciendas Parade of Homes Awards –</a> Best
+                            <b>2018</b><a href="#"> – Haciendas Parade of Homes Awards – </a> Best
                             Outdoor Living Space & Grand Hacienda
                         </li>
                         <li>
@@ -220,14 +216,13 @@
                 </div>
             </div>
 
-            <div class="toggle-info afiliations">
-                <h3>
-                    Afiliations
-                    <a id="iconarrow" class="arrow-btn" onclick="toggleAfiliations()">
-                        <i id="icon-arrow-afiliations" class="las la-angle-down" style="transform: rotate(0turn)"></i>
+            <div class="toggle-info affiliations">
+                <h3>Afiliations
+                    <a id="iconarrow" onclick="toggleAbout('affiliations')">
+                        <i id="icon-arrow-affiliations" class="las la-angle-down" style="transform: rotate(0turn)"></i>
                     </a>
                 </h3>
-                <div id="toggle-afiliations" class="toggle-items" style="display: none">
+                <div class="toggle-items" id="affiliations" style="display: none;">
                     <ul>
                         <li>
                             <b>2018</b> – Haciendas Parade of Homes Awards – Best Outdoor

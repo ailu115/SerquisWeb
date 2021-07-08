@@ -49,84 +49,24 @@ function initMap() {
   });
 }
 
-  // Toggle in about
+  
 
-function toggleAwards () {
-  var x = document.getElementById("toggle-awards");
-  var icon = document.getElementById("icon-arrow");
+
+
+
+
+
+function toggleAbout(id) {
+  var x = document.getElementById(id);
+  var icon = document.getElementById('icon-arrow-' + id);
   if (x.style.display === "none") {
-    x.style.display = "block";
-    icon.style.transform = "rotate(0.5turn)";
-  //  $("i").toggleClass("fa-caret-up");
-    
+      x.style.display = "block";
+      icon.style.transform = "rotate(0.5turn)";
   } else {
-    x.style.display = "none";
-    icon.style.transform = "rotate(0turn)";
-    // $("i").toggleClass("fa-caret-down");
-   
+      x.style.display = "none";
+      icon.style.transform = "rotate(0turn)";
   }
-
 }
-
-function toggleAfiliations () {
-  var x = document.getElementById("toggle-afiliations");
-  var icon = document.getElementById("icon-arrow-afiliations");
-  if (x.style.display === "none") {
-    x.style.display = "block";
-    icon.style.transform = "rotate(0.5turn)";
-  //  $("i").toggleClass("fa-caret-up");
-    
-  } else {
-    x.style.display = "none";
-    icon.style.transform = "rotate(0turn)";
-    // $("i").toggleClass("fa-caret-down");
-   
-  }
-
-}
-
-// function toggleServices () {
-//   var x = document.getElementById("toggle-services");
-//   var icon = document.getElementById("icon-arrow");
-//   if (x.style.display === "none") {
-//     x.style.display = "block";
-//     icon.style.transform = "rotate(0.5turn)";
-//   //  $("i").toggleClass("fa-caret-up");
-    
-//   } else {
-//     x.style.display = "none";
-//     icon.style.transform = "rotate(0turn)";
-//     // $("i").toggleClass("fa-caret-down");
-   
-//   }
-
-// }
-
-// Animado
-function toggleServices () {
-  var x = document.getElementById("toggle-services");
-  var icon = document.getElementById("icon-arrow");
-  if (x.style.height === "0px") {
-    x.style.height = "auto";
-    // x.style.height = "100%";
-    x.style.transition = "height ";
-    icon.style.transform = "rotate(0.5turn)";
-  //  $("i").toggleClass("fa-caret-up");
-    
-  } else {
-    x.style.height = "0px";
-    // x.style.height = "0";
-    x.style.transition = "height ";
-    icon.style.transform = "rotate(0turn)";
-    // $("i").toggleClass("fa-caret-down");
-   
-  }
-
-}
-
-
-
-
 
 
 

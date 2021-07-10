@@ -108,6 +108,12 @@ function showDivs(n) {
 // AOS ?
 AOS.init();
 
+// $('[data-aos]').parent().addClass('hideOverflowOnMobile');
+
 
 //stellar
 $(window).stellar();
+
+$.stellar({
+scrollProperty: 'scroll',
+});

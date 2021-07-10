@@ -29,7 +29,7 @@ body {
   background: #fafaf8;
   font-family: neue-kabel, futura, sans-serif;
   margin: 0;
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
 }
 
 h1 {
@@ -93,6 +93,10 @@ section {
   input[type="reset"] {
     width: 100%;
   }
+  body{
+    /* overflow-x: hidden; */
+    width: 100vw;
+  }
 
   /* LANDING  */
   h1 {
@@ -110,6 +114,7 @@ section {
     margin: 60px auto 0;
     height: auto;
     padding: 0;
+   
   }
   .landing {
     text-align: center;
@@ -156,8 +161,17 @@ section {
     grid-template-rows: auto;
     /* display: flex; */
   }
+  .landing-photos-container{
+/* overflow-x: hidden; */
+  }
+  /* @media (max-width: 768px) {
+    .hideOverflowOnMobile {
+    overflow: hidden;
+    }
+    } */
   .overflow {
     width: 105%;
+    /* overflow-x: hidden; */
   }
   .right {
     padding-right: 10%;
@@ -167,22 +181,7 @@ section {
     padding-left: 10%;
     margin-left: -7%;
   }
-  /* .inner-right {
-   
-    justify-self: end;
-    align-self: end;
-   
-    margin: 0;
-    width: auto;
-    text-align: right;
-    
-  } */
-  /* .inner-left {
-    grid-column: 1/3;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-  } */
+
   .landing-photo {
     /* height: 100%; */
     background-size: cover;
@@ -214,25 +213,12 @@ section {
     font-size: 2em;
     padding: 0.2em 0;
   }
-  /* .section1,
-  .section2,
-  .section3 {
-    filter: grayscale(100%) contrast(150%);
-  }
-  .section1:hover {
-    filter: grayscale(0%) contrast(110%);
-  }
-  .section2:hover {
-    filter: grayscale(0%) contrast(110%);
-  }
-  .section3:hover {
-    filter: grayscale(0%) contrast(110%);
-  } */
+
 
   .section1 {
    
     text-align: right;
-    height: 60vh;
+    height: 70vh;
     /* z-index: -100; */
   }
   .section2 {
@@ -263,8 +249,9 @@ section {
   }
   .info p {
     max-width: 1000px;
-    max-width: 0 auto;
+    
     text-align: left;
+    margin: 0 auto;
   }
 
   .border-top {
@@ -431,9 +418,17 @@ section {
   .contact-photo .desktop {
     display: none;
   }
+  .contact .landing{
+    border-bottom: 0px;
+  }
 
   .contact .landing ul {
-    padding: 0.5em;
+    padding: 0.5em 0;
+    margin: 0.5em 0;
+  }
+  .contact .landing .social-media {
+    margin: 1em 0;
+    padding-bottom: 1em;
   }
 
   .google-map {
@@ -650,6 +645,10 @@ section {
     padding-left: 12%;
     margin-left: -12%;
   }
+  .section1 {
+   
+    height: 55vh;
+  }
 
   .quote {
     width: 100%;
@@ -747,6 +746,7 @@ section {
     width: 35%;
     padding-right: 1em;
     margin-top: 2vh;
+    border-bottom: 1px;
   }
   .contact .landing h1 {
     /* margin: 0 0 0 -15%; */
@@ -764,7 +764,8 @@ width: 180%;
 
   .contact-photo {
     width: 65%;
-    height: 100%;
+    height: 60vh;
+    max-height: 500px;
     overflow: hidden;
     margin-top: 2vh;
     padding-top: 1em;
@@ -776,28 +777,35 @@ width: 180%;
   .contact-photo .desktop {
     display: block;
     padding-left: 0.5em;
-    width: 100%;
+    /* width: 100%; */
   }
 
   .contact .landing ul {
     padding: 0.5em;
     text-align: left;
+    margin: 1em 0;
     /* border: 0px; */
+  }
+  .contact .landing .social-media {
+    /* margin: 1em; */
+    padding-bottom: 1em;
   }
 
   .maps {
     display: flex;
+    min-height: 45vh;
   }
   .multi-modal {
     width: 50%;
   }
   .google-map {
-    height: 40vh;
+    /* height: 40vh; */
     width: 50%;
   }
 
   .google-map iframe {
     width: 100%;
+    height: 40vh;
   }
 
   
@@ -863,6 +871,11 @@ width: 180%;
     margin-left: -22%;
   }
 
+  .contact-photo {
+    width: 65%;
+    height: 60vh;
+    max-height: 600px;
+
   /* .services-section {
     background: var(--primary-color);
     width: 144%;
@@ -875,11 +888,12 @@ width: 180%;
     padding: 1em 0;
   } */
 
-  footer {
+  /* footer {
     padding: 0 15%;
-  }
+    
+  } */
 }
-
+}
 /* Larger than Desktop HD */ /* Larger than Desktop HD */ /* Larger than Desktop HD */ /* Larger than Desktop HD */ /* Larger than Desktop HD */
 
 @media (min-width: 1200px) {
@@ -887,9 +901,5 @@ width: 180%;
     width: 70%;
     max-width: 1200px;
   }
-  .footer-info picture img {
-    width: 80%;
-    margin: 0 auto 0;
-    max-width: 100px;
-  }
+ 
 }

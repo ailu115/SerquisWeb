@@ -21,6 +21,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/style2.css" />
 </head>
+<body>
 <!-- <header>
     <div id="header-container">
         <span id="logo" class="logo-header">
@@ -51,6 +52,7 @@
         </nav>
     </div>
 </header> -->
+
  <header>
     <div id="header-container">
         <span id="logo" class="logo-header-landing">
@@ -100,7 +102,7 @@
           
         <h1 class="">"Connecting people with places"</h1>
     </div>
-    <div>
+    <div class="landing-photos-container">
 
 
         <section class="landing-photo section1 right overflow" style=" background-image: linear-gradient(
@@ -109,15 +111,16 @@
             rgba(87, 85, 84, 0.2)
           ),
           url(img/Landing/Trailhead-72.jpg) "
-          data-stellar-background-ratio="0.5"
-          data-stellar-ratio="1.1"
+          
           >
             <a href="#" class="landing-link">
                 <h2>Trailhead</h2>
 
             </a>
         </section>
-        <section class="landing-photo section2 left overflow" style=" background-image: linear-gradient(
+        <section class="landing-photo section2 left overflow" 
+      
+        style=" background-image: linear-gradient(
             -45deg,
             rgba(212, 212, 211, 0.1),
             rgba(87, 85, 84, 0.2)
@@ -128,7 +131,9 @@
 
             </a>
         </section>
-        <section class="landing-photo section3 right overflow" style=" background-image: linear-gradient(
+        <section class="landing-photo section3 right overflow" 
+       
+        style=" background-image: linear-gradient(
             -45deg,
             rgba(212, 212, 211, 0.1),
             rgba(87, 85, 84, 0.2)
@@ -249,10 +254,11 @@
 
 </div>
 <footer id="">
+    <div class="footer-container">
     <div class="footer-info border-bottom">
         <picture>
-            <!-- <source srcset="img/Logo/Icon-White.png" media="(max-width: 749px)" />
-            <source srcset="img/Logo/S+A-LOGOwhiteArtboard.png" media="(min-width: 750px)" /> -->
+            <source srcset="img/Logo/Icon-White.png" media="(max-width: 749px)" />
+            <source srcset="img/Logo/S+A-LOGOwhiteArtboard 3.png" media="(min-width: 750px)" />
 
             <img src="img/logo/Icon-White.png" alt="serquis-logo" />
         </picture>
@@ -261,11 +267,9 @@
             <ul class="">
                 <li><b>Serquis + Associates</b></li>
                 <li><b>Landscape Architecture</b></li>
-                <li>Trailhead Compound </li>
+                <li>Trailhead Compound</li>
                 <li>922A Shoofly St, Suite #201</li>
                 <li>Santa Fe, NM 87505</li>
-
-
             </ul>
         </div>
         <div class="contact-info">
@@ -273,14 +277,21 @@
                 <li>T: (505) 629 - 1009</li>
                 <li><a href="#">contact@serquis.com</a></li>
             </ul>
-
         </div>
         <div>
             <ul class="social-media">
-                <li><a href="#"><i class="lab la-facebook-square"></i></a></li>
-                <li><a href="#"><i class="lab la-instagram"></i></a></li>
-                <li><a href="#"><i class="lab la-houzz"></i></a></li>
-                <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
+                <li>
+                    <a href="#"><i class="lab la-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="lab la-instagram"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="lab la-houzz"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="lab la-linkedin-in"></i></a>
+                </li>
             </ul>
             <div class="houzz-badges">
                 <a href="https://www.houzz.com/pro/solange2serquis/serquis-associates-landscape-architecture"><img
@@ -296,14 +307,14 @@
         </div>
     </div>
     <p>
-        Copyright © 2021, Serquis + Associates Landscape Architecture. All rights Reserved
+        Copyright © 2021, Serquis + Associates Landscape Architecture. All
+        rights Reserved
     </p>
-
-
+    </div>
 </footer>
 <script src="js/jquery.min.js"></script>
 <script src="js/aos.js"></script>
-
+<script src="js/jquery.stellar.js"></script>
 
 <script src="js/myjquery.js"></script>
 </body>

@@ -10,10 +10,14 @@
     <link rel="stylesheet" href="https://use.typekit.net/sud0zuo.css" />
 
     <link rel="stylesheet" href="css/trongate.css" />
+
     <link rel="stylesheet" href="line-awsome/css/line-awesome.min.css">
     <link rel="icon" type="image/png" href="images/favicon.png" />
+    <link rel="stylesheet" href="css/aos.css">
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/stylework.css" />
+    <link rel="stylesheet" href="css/styleprojects.css">
 </head>
 
 <body>
@@ -48,47 +52,93 @@
         </div>
     </header>
     <div id="master-container">
-        <section class="contact">
-            <div class="landing">
-                <h1 class="overflow left ">Contact</h1>
-                <h3>Start a Conversation</h3>
-                <ul class="border-bottom border-top">
-                    <li>Serquis + Associates</li>
-                    <li>Trailhead Compound</li>
-                    <li>922A Shoofly St, Suite #201</li>
-                    <li>Santa Fe, NM 87505</li>
-                    <li>T: (505) 629 - 1009</li>
-                    <li><a href="#">contact@serquis.com</a></li>
-                </ul>
-                <ul class="social-media">
-                    <li><a href="#"><i class="lab la-facebook-square"></i></a></li>
-                    <li><a href="#"><i class="lab la-instagram"></i></a></li>
-                    <li><a href="#"><i class="lab la-houzz"></i></a></li>
-                    <li><a href="#"><i class="lab la-linkedin-in"></i></a></li>
-                </ul>
-            </div>
+        <div class="landing">
 
-            <div class="contact-photo">
-                <img class="mobile" src="img/Contact/SolangeSerquis-Associates-GabriellaMarksPhoto-252400px 72ppi copy.jpg"
-                    alt="" />
-                <img class="desktop" src="img/contact/thetrailhead-space-bench.jpg" alt="" />
-            </div>
-        </section>
-        <section class="location border-top border-bottom">
-            <h3>Visit us at The Trailhead</h3>
-            <div class="maps">
-                <div class="multi-modal">
-                    <img class="mobile" src="img/contact/multimodal-map-01.png" alt="" />
-                    <img class="desktop" src="" alt="" />
-                    <img src="" alt="" />
+            <h1>Projects</h1>
+            <!-- <div>
+                <img src="img/Icons/Trailheadicon-white.png" alt="">
+            </div> -->
+         </div>
+        
+        <section id="" class="projects-nav">
+                <ul>
+                    <li class="active">
+                        <a href="#">
+    
+                           Featured
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+    
+                            Residential
+                        </a>
+                    </li>
+                    <li class="">
+                        <a href="#">
+                            Commercial -Public
+                        </a>
+                    </li>
+                   
+                </ul>
+            </section>
+            <section class="projects-container">
+                <div class="project">
+                    <a href="ProjectExample.html">
+                        <div class="project-img">
+                            <img src="img/Projects/sky-house/hero-img-1200.jpeg" alt="">
+                        </div>
+                        <div class="project-title">
+                            <h2>Sky House</h2>
+                        </div>
+                    </a>
                 </div>
-                <div class="google-map">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12964.300930430674!2d-105.9619746!3d35.6751495!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xdf473cc1e63eaf2f!2sSerquis%20%26%20Associates!5e0!3m2!1sen!2sar!4v1623164938771!5m2!1sen!2sar"
-                        width="" height="300px" style="border: 0" allowfullscreen=""></iframe>
+                <div class="project">
+                    <a href="ProjectExample.html">
+                        <div class="project-img">
+                            <img src="img/Projects/contemporary-zen-backyard/hero-img.jpeg" alt="">
+                        </div>
+                        <div class="project-title">
+                            <h2>Contemporary Zen Backyard</h2>
+                        </div>
+                    </a>
                 </div>
-            </div>
-        </section>
+                <div class="project">
+                    <a href="ProjectExample.html">
+                        <div class="project-img">
+                            <img src="img/Projects/contemporary-home/heroimage-waterfeaturebirdsdessert.jpeg" alt="">
+                        </div>
+                        <div class="project-title">
+                            <h2>Contemporary Home</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="project">
+                    <a href="ProjectExample.html">
+                        <div class="project-img">
+                            <img src="img/Projects/contemporary-home/heroimage-waterfeaturebirdsdessert.jpeg" alt="">
+                        </div>
+                        <div class="project-title">
+                            <h2>Acequia Trail Unederpass</h2>
+                        </div>
+                    </a>
+                </div>
+
+            </section>
+            <section class="border-top border-bottom">
+                <div class="pagination">
+                    <a href="#"><i class="las la-angle-double-left"></i></a>
+                    <a href="#">1</a>
+                    <a class="active" href="#">2</a>
+                    <a href="#">3</a>
+                    <a href="#">4</a>
+                    <a href="#">5</a>
+                    <a href="#">6</a>
+                    <a href="#"><i class="las la-angle-double-right"></i></a>
+                </div>
+            </section>
+        
+
     </div>
     <footer id="">
         <div class="footer-info border-bottom">
@@ -148,8 +198,11 @@
         </p>
     </footer>
     <script src="js/jquery.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <script src="js/myjquery.js"></script>
-</body>
 
-</html>
+</body>

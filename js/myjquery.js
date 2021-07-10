@@ -107,3 +107,7 @@ function showDivs(n) {
 
 // AOS ?
 AOS.init();
+
+
+//stellar
+$(window).stellar();

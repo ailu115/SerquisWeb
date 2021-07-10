@@ -9,7 +9,7 @@
   --font-sans: neue-kabel, futura, sans-serif;
 }
 
-.our-work .landing {
+/* .our-work .landing {
   display: flex;
   justify-content: flex-start;
   align-content: flex-end;
@@ -32,86 +32,7 @@
   border-radius: 50%;
   padding: 0;
 }
-.projects-nav {
-  margin-right: -5%;
-  margin-left: -5%;
-  overflow-x: auto;
-  overflow-y: visible;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  background: rgba(143, 148, 39, 0.7);
-  width: 110%;
-}
 
-/* scroll bar  */
-
-/* Hide scrollbar for Chrome, Safari and Opera */
-.projects-nav:-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.projects-nav {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none;
-  /* Firefox */
-  height: 70px;
-}
-
-.projects-nav ul {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  margin: 0em 0 0.2em;
-  height: 70px;
-}
-.projects-nav ul li {
-  align-self: flex-end;
-  text-overflow: ellipsis;
-  text-align: left;
-  line-height: 1.5em;
-  letter-spacing: 0.1em;
-  display: flex;
-  width: 100%;
-  border-bottom: 0.2em solid rgba(255, 255, 255, 0.3);
-  height: 100%;
-}
-
-.projects-nav ul li a {
-  text-align: left;
-  font-size: 1.2rem;
-  align-self: flex-end;
-  text-align: center;
-  margin: 0 auto;
-}
-
-.projects-nav ul li p {
-  margin: 0;
-  color: white;
-}
-
-.projects-nav ul li a img {
-  border: 1px solid white;
-  border-radius: 12em;
-  height: 4em;
-  margin: 0 auto;
-  display: none;
-}
-.projects-nav ul li a:hover img {
-}
-.projects-nav ul li:hover {
-  color: var(--text-medium);
-  background: rgba(255, 255, 255, 0.2);
-}
-
-.projects-nav ul li.active {
-  background: var(--primary-color);
-  border-bottom: 0.2em solid rgba(255, 255, 255, 1);
-}
-
-.projects-nav ul li.active a p {
-  color: white;
-}
 
 .project {
   position: relative;
@@ -181,7 +102,7 @@
 .project:nth-child(even) a .project-title h2 {
   padding-right: 0.15em;
   padding-left: 0;
-}
+} */
 
 /* PAGINATION  */
 
@@ -236,7 +157,7 @@
   padding: 0;
 }
 .landing-project-example {
-  height: 90vh;
+  height: calc(100vh - 60px);
   text-align: center;
   background-image: cover;
   background: linear-gradient(
@@ -324,74 +245,18 @@
   margin-right: 1em;
 }
 
-/* NEWS */
-/* NEWS */
-/* NEWS */
-/* NEWS */
-/* NEWS */
-/* NEWS */
-/* NEWS */
 
-.publications-container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  gap: 0.8em;
-}
-
-.publication {
-  width: 100%;
-  background: whitesmoke;
-}
-.publication .news-title {
-  padding: 0.5em;
-}
-.publication h4 {
-  line-height: 1.2em;
-  padding: 0;
-  margin-top: 0.5em;
-}
-.publication p {
-  padding: 0;
-  font-size: 1rem;
-}
-
-.news-example .landing {
-  padding-top: 1em;
-}
-.news-example h1 {
-  margin: 0.5em 0;
-  padding: 0.2em 0.5em;
-  font-size: 1.5rem;
-  background-color: #fafaf8;
-  color: var(--primary-color);
-  text-align: center;
-  font-weight: 500;
-}
-.news-content {
-  margin: 0 auto;
-  text-align: left;
-}
-.news-content h4 {
-  margin: 1em 0 0.2em;
-}
-.news-content p {
-  padding: 0;
-}
 /* media 500 */ /* media 500 */ /* media 500 */ /* media 500 */ /* media 500 * media 500 */
-@media (min-width: 540px) {
-  .our-work h1 {
+@media (min-width: 550px) {
+
+  .landing-project-example {
+    height: calc(100vh - 70px);
+  }
+  /* .our-work h1 {
     font-size: 3rem;
   }
 
-  .projects-nav ul {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    margin: 0 auto;
-    justify-content: space-around;
-  }
+  
 
   .project .project-title h2 {
     font-size: 2.5rem;
@@ -444,7 +309,7 @@
     height: auto;
 
     align-self: center;
-  }
+  } */
 
   .project-pagination .pagination .pagination-tag {
     display: inline-block;
@@ -458,7 +323,8 @@
 /* Larger than tablet */ /* Larger than tablet */
 /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */
 @media (min-width: 750px) {
-  .our-work h1 {
+ 
+  /* .our-work h1 {
     width: 70%;
   }
 
@@ -466,30 +332,7 @@
     width: 30%;
   }
 
-  .projects-nav {
-    margin-right: -12.5%;
-    margin-left: -12.5%;
-    padding-left: 12.5%;
-    padding-right: 12.5%;
-    width: 125%;
-  }
-
-  .projects-nav ul {
-    padding-bottom: 0.2em;
-  }
-
-  .projects-nav ul li {
-    padding: 0em 0.5em;
-    border-bottom: 0.3em solid rgba(255, 255, 255, 0.3);
-  }
-  .projects-nav ul li p {
-    text-align: center;
-    align-self: flex-end;
-  }
-  .projects-nav ul li.active {
-    background: var(--primary-color);
-    border-bottom: 0.3em solid rgba(255, 255, 255, 1);
-  }
+  
 
   .project a {
     height: 100%;
@@ -515,9 +358,10 @@
   .project:nth-child(even) a .project-title h2 {
     padding-left: 0.6em;
     padding-right: 0;
-  }
+  } */
 
   .landing-project-example {
+    height: calc(100vh - 80px);
     margin: 0 -12% 0;
   }
   .photos-project {
@@ -533,23 +377,11 @@
         background:var(--primary-color);
     } */
 
-  /* NEWS */
-
-  .publications-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 1em;
-  }
-
-  .news-example h1 {
-    font-size: 1.8rem;
-  }
+ 
 }
 
 @media (min-width: 1000px) {
-  .our-work h1 {
+  /* .our-work h1 {
     width: 80%;
   }
 
@@ -583,7 +415,7 @@
 
   .project .hero-img {
     width: 85%;
-  }
+  } */
 
   .landing-project-example {
     margin: 0 -22% 0;
@@ -593,36 +425,28 @@
     margin-top: -5em;
   }
 
-  .news-content {
-    max-width: 70%;
-  }
+  
 }
 
 /* Larger than Desktop HD */
 
 @media (min-width: 1200px) {
-  .project .hero-img img {
-    /* margin-top: -5em; */
-  }
-  .project a {
+ 
+  /* .project a {
     height: 100%;
   }
 
   .project .project-title h2 {
     height: 100%;
-  }
+  } */
 
-  /* NEWS */
-  .publications-container {
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
-    gap: 1em;
-  }
+  
 }
-@media (min-width: 1400px) {
-  .projects-nav {
+@media (min-width: 1500px) {
+  .landing-project-example{
+   height: calc(100vh - 100px);
+  }
+  /* .projects-nav {
     height: 50px;
   }
   .projects-nav ul {
@@ -640,7 +464,7 @@
     height: 100%;
     max-height: 800px;
     font-size: 4rem;
-  }
+  } */
 }
 
 /* IMAGE CHANGE ON MOBILE AND DESKTOP */

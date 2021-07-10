@@ -24,21 +24,24 @@
         top: 0;
         z-index: 3;
         width: 100%;
-        height: 10vh;
+        /* height: 10vh;
+        
         min-height: 60px;
+        max-height: 80px; */
+       height: 60px;
     }
     #header-container {
         width: 90%;
         margin: 0 auto;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 10vh;
+      height: 100%;
     }
 
 
     .logo-header {
         grid-column: 1/4;
-        width: 90%;
+        width: 80%;
         align-self: center;
        
       
@@ -52,7 +55,9 @@
     .logo-header-landing{
         grid-column: 1/2;
         align-self: center;
-        width: 50%;
+        width: 40%;
+        
+
       
     }
     nav.abierto {
@@ -204,20 +209,93 @@
     }
     /*MENU HAMBURGESA*/
 
+    footer {
+        margin: 0;
+        background: var(--text-light);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 2em;
+      }
+      footer img {
+        width: 5em;
+        margin: 0 auto;
+      }
+      footer li {
+        color: var(--primary-color);
+      }
+      footer a {
+        color: var(--primary-color);
+        border-bottom: 1px solid var(--primary-color);
+      }
+      .social-media {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .social-media a {
+        border-bottom: 0px;
+        margin: 0.2em;
+        padding: 1em 0.8em;
+      }
+      .social-media i {
+        color: var(--primary-color);
+        font-size: 2em;
+        background: rgba (255, 255, 255, 0.2);
+      }
+    
+      .social-media a:hover i {
+        opacity: 0.5;
+        transition-delay: 0.2s;
+      }
+    
+      .houzz-badges {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+      }
+    
+      .houzz-badges a {
+        padding: 0 10px 0 0;
+        text-decoration: none;
+        border-bottom: 0px;
+      }
+      .houzz-badges a:nth-last-child(1){
+          padding: 0 0px 0 0;
+      }
+      .contact .landing h1 {
+        font-size: 2rem;
+        text-align: left;
+        padding: 0.1em 5%;
+        margin: 0 0 0 -5%;
+        background: var(--primary-color);
+        color: white;
+      }
+
+
+
+
+
+
+
 }
 
 @media (min-width: 550px) {
+    header {
+        height: 70px;
+    }
     .logo-header {
     
         grid-column: 1/4;
     
         align-self: center;
-        width: 80%;
+        width: 60%;
         
     }
     .logo-header-landing{
         grid-column: 1/2;
-        width: 40%;
+        width: 30%;
     }
     
 
@@ -235,8 +313,9 @@
         margin: 0 auto;
         background: #fff;
         border-bottom: 1px solid var(--text-light);
-        height: 10vh;
-        min-height: 80px;
+        /* height: 10vh;
+        min-height: 80px; */
+        height: 80px;
     }
     #header-container {
         /* background: green; */
@@ -255,13 +334,12 @@
         align-self: center;
     }
     .logo-header-landing{
-        width: 10%;
+        width: 8%;
     }
     #logo img {
-        /* width: 100%; */
-        /* height: 8vh; */
+        
         width: auto;
-        /* align-self: center; */
+       
     }
     nav {
         background-color: #fff;
@@ -312,6 +390,49 @@
     #menu-toggle {
         display: none;
     }
+    /* FOOTER */
+  footer {
+    padding: 0 10% 2em;
+  }
+  .footer-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 1em 0;
+    padding: 1em 0;
+  }
+  .footer-info picture {
+    width: 15%;
+
+    text-align: center;
+  }
+  .footer-info picture img {
+    width: 80%;
+    margin: 0 auto 0;
+    max-width: 100px;
+  }
+
+  .footer-info .addres-info {
+    text-align: left;
+    margin: 0 1em;
+  }
+  .footer-info .addres-info ul {
+    margin: 0;
+  }
+  .footer-info .contact-info {
+    text-align: left;
+  }
+  .footer-info .contact-info ul {
+    margin: 0;
+  }
+  .footer-info .social-media {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .footer-info .social-media li {
+    text-align: center;
+  }
 }
 @media (min-width: 1000px) {
 
@@ -351,4 +472,17 @@
     body {
         font-size: 2em;
     }
+    nav ul li a {
+        font-size: 1.5rem;
+}
+}
+
+@media (min-width: 1500px) {
+header {
+    height: 100px;
+}
+body {
+    font-size: 3rem;
+}
+
 }

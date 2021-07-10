@@ -29,6 +29,7 @@ body {
   background: #fafaf8;
   font-family: neue-kabel, futura, sans-serif;
   margin: 0;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -66,7 +67,8 @@ a {
 }
 
 a:hover {
-  color: var(--primary-color-dark);
+  color: var(--text-medium);
+  opacity: 0.9;
 }
 
 strong {
@@ -95,36 +97,29 @@ section {
   /* LANDING  */
   h1 {
     font-size: 2rem;
+    margin: 1em 0 0.2em;
   }
   p {
     font-size: 0.9em;
     font-weight: 300;
     padding: 0.5em 0.8em;
   }
-  /* .landing-link {
-    color: white;
-    padding: 0.3em 0.3em;
-    border-radius: 0em;
-  }
-  .landing-link:hover {
-    background-color: white;
-    opacity: 0.9;
-    border-bottom: 0px solid white;
-    color: var(--text-medium);
-    border-radius: 0.2em;
-    transition: 0.2s;
-  } */
+ 
   #master-container {
     width: 90%;
-    margin: 10vh auto 0;
+    margin: 60px auto 0;
     height: auto;
     padding: 0;
   }
   .landing {
     text-align: center;
-    margin-top: 2vh;
+    /* margin-top: 2vh; */
     margin-bottom: 1em;
     padding-top: 1em;
+    border-bottom: 2px solid var(--primary-color);
+  }
+  .index-main {
+    border-bottom: 0px;
   }
 
   .landing img {
@@ -132,20 +127,28 @@ section {
     width: 100%;
     margin: 0 auto;
   }
-  .index-main .landing {
-    height: 25vh;
-    z-index: 100;
+  .landing svg{
+    margin: 0 auto;
+    width: 80%;
   }
+
   /* .index-main */
-  .landing h1 {
+ .index-main h1 {
     text-align: left;
-    color: white;
+    /* color: white; */
     font-size: 1em;
     letter-spacing: 0.1em;
-    margin-top: 1em;
-    margin-bottom: 2em;
+    margin: 1em 0 1em 0;
+    /* margin-top: 1em; */
+    /* margin-bottom: 2em; */
     line-height: 1.5em;
-    background: var(--primary-color);
+    text-align: center;
+    /* background: var(--primary-color); */
+    
+  }
+
+  .underline{
+    border-bottom: 0.3em solid var(--primary-color);
   }
   #container {
     display: grid;
@@ -164,41 +167,54 @@ section {
     padding-left: 10%;
     margin-left: -7%;
   }
-  .inner-right {
-    /* grid-column: 3/5; */
+  /* .inner-right {
+   
     justify-self: end;
     align-self: end;
-    /* padding: 0 0 2em; */
-    /* padding-right: 10%; */
+   
     margin: 0;
     width: auto;
     text-align: right;
     
-  }
-  .inner-left {
+  } */
+  /* .inner-left {
     grid-column: 1/3;
-
     padding: 0;
     margin: 0;
     text-align: left;
-  }
-  /* .landing-link {
-    border: 1px solid white;
-    background: rgba(143, 148, 39, 1);
-    color: white;
   } */
-  
   .landing-photo {
-    height: 100%;
+    /* height: 100%; */
     background-size: cover;
     background-position: center;
+    /* position: relative; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    filter: grayscale(100%) contrast(150%);
+
   }
+  .landing-photo:hover {
+    filter: grayscale(0%) contrast(110%);
+  }
+  .landing-link {
+    display: flex;
+    align-items: flex-end;
+    /* border: 1px solid white;
+    background: rgba(143, 148, 39, 1);
+    color: white; */
+    /* position: absolute; */
+  }
+  
+  
   .landing-photo h2 {
     color: white;
     font-weight: 500;
     font-size: 2em;
+    padding: 0.2em 0;
   }
-  .section1,
+  /* .section1,
   .section2,
   .section3 {
     filter: grayscale(100%) contrast(150%);
@@ -211,18 +227,23 @@ section {
   }
   .section3:hover {
     filter: grayscale(0%) contrast(110%);
-  }
+  } */
 
   .section1 {
    
     text-align: right;
     height: 60vh;
-    z-index: -100;
+    /* z-index: -100; */
   }
   .section2 {
-   
-
+   justify-content: flex-start;
+    align-items: flex-end;
     height: 40vh;
+  }
+  .section2 .landing-link {
+    align-items: flex-end;
+    /* height: 30vh; */
+
   }
   .section3 {
   
@@ -386,63 +407,7 @@ section {
 
   /* TESTIMONIAL */
 
-  footer {
-    margin: 0;
-    background: var(--text-light);
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  footer img {
-    width: 5em;
-    margin: 0 auto;
-  }
-  footer li {
-    color: var(--primary-color);
-  }
-  footer a {
-    color: var(--primary-color);
-    border-bottom: 1px solid var(--primary-color);
-  }
-  .social-media {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .social-media a {
-    border-bottom: 0px;
-    margin: 0.2em;
-    padding: 1em 0.8em;
-  }
-  .social-media i {
-    color: var(--primary-color);
-    font-size: 2em;
-    background: rgba (255, 255, 255, 0.2);
-  }
-
-  .social-media a:hover i {
-    opacity: 0.5;
-    transition-delay: 0.2s;
-  }
-
-  .houzz-badges {
-    display: flex;
-    justify-content: space-around;
-    padding: 1em;
-  }
-
-  .houzz-badges a {
-    padding: 0 10px 20px 0;
-    text-decoration: none;
-    border-bottom: 0px;
-  }
-  .contact .landing h1 {
-    font-size: 2rem;
-    text-align: left;
-    padding: 0.1em 5%;
-    margin: 0 0 0 -5%;
-  }
+  
   .contact {
     display: flex;
     flex-direction: column;
@@ -488,10 +453,13 @@ section {
     grid-template-rows: auto;
   }
 
-  .about .landing h1 {
+  .about .landing h1,
+  .contact .landing h1 {
     font-size: 2rem;
     text-align: left;
     padding: 0.1em 0.5em;
+    background: var(--primary-color);
+    color: white;
   }
   .about .landing h2 {
     font-size: 1.2rem;
@@ -555,8 +523,6 @@ section {
 
   .about .toggle-info .arrow-btn i {
     font-size: 1em;
-    /* color: var(--text-medium); */
-
     border-radius: 50%;
     width: 1.5em;
     height: 1.5em;
@@ -588,84 +554,14 @@ section {
   .about .houzz-badges a {
     padding: 0 10px 20px 0;
   }
-   /* SERVICES */
-
-   /* .services-section {
-    background-color: var(--primary-color);
-    margin-right: -5%;
-    margin-left: -5%;
-    width: 110%;
-  }
-  .services-section .toggle-info {
-    width: 90%;
-    margin: 1em auto;
-    background-color: var(--primary-color);
-    text-align: center;
-    padding: 1em 0 2em;
-  }
-  .services-section .toggle-info a {
-    width: auto;
-  }
-
-  .services-section .toggle-info h3 {
-    color: white;
-
-    margin: 0;
-  }
-  .services-section .toggle-info p {
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-  } */
-
-  /* .services-section .toggle-info .arrow-btn svg {
-    font-size: 1.5em;
-    font-weight: 300;
-
-    fill: white;
-
-    width: 1.5em;
-    height: 1.5em;
-    padding: 0.2em;
-
-    text-align: center;
-    line-height: 1em;
-    vertical-align: middle;
-    margin-top: -0.2em auto;
-  } */
-
-  .services {
-    background: white;
-    line-height: 1.2em;
-    overflow: hidden;
-    display: block;
-  }
-  .toggle-services {
-    height: 0em;
-    transition: 0.5s ease-in-out;
-  }
-
-  .service {
-    padding: 1em 0.8em;
-    text-align: left;
-  }
-
+   
   .services strong {
     color: var(--primary-color);
     font-size: 1.2em;
     line-height: 1.5em;
     margin-bottom: 0.2em;
   }
-  .services ul li {
-    list-style-type: disc;
-    list-style-position: inside;
-    padding: 0.2em;
-  }
 
-  .services ul {
-    margin: 0.8em 0.2em;
-    text-align: left;
-  }
 }
 
 /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */
@@ -681,14 +577,22 @@ section {
     width: 80%;
     margin: 0 0 0;
   }
+  .landing svg{
+    margin: 0 auto;
+    width: 60%;
+    padding: 2em;
+  }
 }
 
 /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */
 
 @media (min-width: 750px) {
+
+
   #master-container {
     width: 80%;
-    margin-top: 12vh;
+    margin-top: 80px;
+    
   }
   .landing {
     margin-bottom: 2em;
@@ -699,14 +603,20 @@ section {
     width: 60%;
     margin: 0 0 0em;
   }
-  .index-main .landing h1 {
-    color: white;
+  .landing svg{
+    margin: 0 auto;
+    width: 60%;
+    padding: 2em 0 1em;
+  }
+  .index-main  h1 {
+    /* color: white; */
     font-size: 1.8em;
     letter-spacing: 0.2em;
     margin-top: 0em;
-    margin-bottom: 1.5em;
+    /* margin-bottom: 1.5em; */
     line-height: 1.5em;
-    background-color: var(--primary-color);
+    padding: 0.5em 0 0 0;
+    /* background-color: var(--primary-color); */
   }
 
   h1 {
@@ -761,6 +671,9 @@ section {
   }
 
   /* ABOUT */
+  .about .landing h1, .contact .landing h1{
+    font-size: 2.5rem;
+  }
 
   .about .landing h2 {
     font-size: 1.5rem;
@@ -819,54 +732,8 @@ section {
     margin-left: -12%;
   }
 
-  .services-section {
-    /* background: var(--primary-color); */
-    width: 100%;
-    grid-column: 1/5;
+ 
   
-  }
-  .services-section #toggle-services{
-    height: 100% !important;
-  }
-  
-  .services-section .toggle-info .arrow-btn {
-    display: none;
-  }
-
-  .services-section .toggle-info {
-    display: flex;
-    justify-content: space-between;
-  }
-  .services-title {
-    /* border-right: 1px solid var(--text-medium); */
-    width: 30%;
-    /* padding: 0 1em; */
-  }
-  .services-section .toggle-info h3 {
-    text-align: left;
-    padding-left: 0;
-  }
-
-  .services-section .toggle-info p {
-    text-align: left;
-  }
-  .services {
-    width: 70%;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    /* background-color: rgba(143, 148, 39, 0.5); */
-  }
-
-  .service {
-    width: 50%;
-    /* color: white; */
-  }
-  .service strong {
-    /* color: white; */
-  }
 
   .contact {
     display: flex;
@@ -879,7 +746,17 @@ section {
   .contact .landing {
     width: 35%;
     padding-right: 1em;
+    margin-top: 2vh;
   }
+  .contact .landing h1 {
+    /* margin: 0 0 0 -15%; */
+    padding: 0;
+    padding-left: 80%;
+margin-left: -80%;
+width: 180%;
+  }
+
+
   .contact h3,
   .location h3 {
     font-size: 1.5rem;
@@ -887,7 +764,6 @@ section {
 
   .contact-photo {
     width: 65%;
-
     height: 100%;
     overflow: hidden;
     margin-top: 2vh;
@@ -924,49 +800,7 @@ section {
     width: 100%;
   }
 
-  /* FOOTER */
-  footer {
-    padding: 0 10%;
-  }
-  .footer-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin: 1em 0;
-    padding: 1em 0;
-  }
-  .footer-info picture {
-    width: 15%;
-
-    text-align: center;
-  }
-  .footer-info picture img {
-    width: 80%;
-    margin: 0 auto 0;
-    max-width: 100px;
-  }
-
-  .footer-info .addres-info {
-    text-align: left;
-    margin: 0 1em;
-  }
-  .footer-info .addres-info ul {
-    margin: 0;
-  }
-  .footer-info .contact-info {
-    text-align: left;
-  }
-  .footer-info .contact-info ul {
-    margin: 0;
-  }
-  .footer-info .social-media {
-    margin: 0;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  .footer-info .social-media li {
-    text-align: center;
-  }
+  
 }
 
 /* Larger than desktop */ /* Larger than desktop */ /* Larger than desktop */ /* Larger than desktop */ /* Larger than desktop */ /* Larger than desktop */
@@ -980,9 +814,9 @@ section {
     width: 70%;
   }
 
-  .landing h1 {
+  /* .landing h1 {
     font-size: 1.8em;
-  }
+  } */
   h2 {
     font-size: 2.2em;
   }
@@ -1029,7 +863,7 @@ section {
     margin-left: -22%;
   }
 
-  .services-section {
+  /* .services-section {
     background: var(--primary-color);
     width: 144%;
     margin-right: -20%;
@@ -1039,7 +873,7 @@ section {
   .services-section .toggle-info {
     width: 70%;
     padding: 1em 0;
-  }
+  } */
 
   footer {
     padding: 0 15%;

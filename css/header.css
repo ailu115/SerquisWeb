@@ -282,7 +282,7 @@
   Header {
     margin: 0 auto;
     background: #fff;
-    border-bottom: 1px solid var(--text-light);
+ 
     height: 80px;
   }
   #header-container {

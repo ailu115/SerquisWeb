@@ -112,8 +112,10 @@ AOS.init();
 
 
 //stellar
+// jQuer(document).ready(function(){
+//   $.stellar();
+// });
+
+
 $(window).stellar();
 
-$.stellar({
-scrollProperty: 'scroll',
-});

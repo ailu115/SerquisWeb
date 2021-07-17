@@ -312,3 +312,8 @@ Projects nav
     background: var(--primary-color);
     border-bottom: 0.3em solid rgba(255, 255, 255, 1);
   }
+
+
+
+    data-stellar-vertical-offset="10"
+          data-stellar-horizontal-offset="-550"

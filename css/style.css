@@ -150,6 +150,7 @@ section {
 
   .overflow {
     width: 105%;
+    
   }
   .right {
     padding-right: 10%;
@@ -162,13 +163,23 @@ section {
 
   .landing-photo {
     background-size: cover;
-    background-position: center;
+   
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    height: 100%;
+    background-repeat: no-repeat;
     filter: grayscale(100%) contrast(150%);
+    background-position: 50% 50%;
+    width: 100%;
+            /* text-align: center; */
+            /* background-size: auto 140%; */
+           
   }
+ 
+
+
   .landing-photo:hover {
     filter: grayscale(0%) contrast(110%);
   }
@@ -187,6 +198,12 @@ section {
   .section1 {
     text-align: right;
     height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .section1 .landing-photo{
+    background-size: auto 140%;
   }
   .section2 {
     justify-content: flex-start;
@@ -572,10 +589,15 @@ section {
   .landing p {
     padding: 1em 10%;
   }
+.landing-photo{
+  background-size: auto 140%;
+  width: 100vw;
+}
 
   .landing-photo h2 {
     font-size: 3em;
     padding: 0.2em 0;
+    
   }
 
   .overflow {
@@ -619,7 +641,7 @@ section {
   }
 
   .about .landing h2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     text-align: left;
     line-height: 2rem;
   }

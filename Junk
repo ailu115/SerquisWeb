@@ -317,3 +317,14 @@ Projects nav
 
     data-stellar-vertical-offset="10"
           data-stellar-horizontal-offset="-550"
+
+
+
+
+           <div class="landing-photo overflow " data-stellar-background-ratio="1" 
+                   >
+                   <img src="img/Landing/People-GabriellaMarks-01-2500-100-progressive.jpeg" alt="" class="overflow"
+                   data-stellar-ratio="0.3"
+                   >
+                        <h2 class="landing-link"> People</h2>
+                    </div>

@@ -244,14 +244,14 @@
   .houzz-badges a:nth-last-child(1) {
     padding: 0 0px 0 0;
   }
-  .contact .landing h1 {
+  /* .contact .landing h1 {
     font-size: 2rem;
     text-align: left;
     padding: 0.1em 5%;
     margin: 0 0 0 -5%;
     background: var(--primary-color);
     color: white;
-  }
+  } */
 }
 
 @media (min-width: 550px) {
@@ -390,6 +390,7 @@
   .footer-info .social-media {
     margin: 0;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-around;
   }
   .footer-info .social-media li {

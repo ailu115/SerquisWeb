@@ -9,8 +9,6 @@
   --font-sans: neue-kabel, futura, sans-serif;
 }
 
-
-
 /* PAGINATION  */
 
 .pagination {
@@ -19,7 +17,7 @@
   width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .pagination .butons .button-small {
@@ -39,6 +37,7 @@
   text-decoration: none;
   border-radius: 0.2em;
   font-size: 0.8rem;
+  margin: 0 0.5em;
 }
 .pagination a.active {
   background-color: var(--primary-color);
@@ -53,7 +52,6 @@
 
 .pagination a p {
   padding: 0;
-  
 }
 
 .pagination .pagination-tag {
@@ -154,19 +152,16 @@
   margin-right: 1em;
 }
 
-
 /* media 500 */ /* media 500 */ /* media 500 */ /* media 500 */ /* media 500 * media 500 */
 @media (min-width: 550px) {
-
   .landing-project-example {
     height: calc(100vh - 70px);
   }
-  
+
   .project-pagination .pagination .pagination-tag {
     display: inline-block;
   }
   .publications-container {
-   
     grid-template-columns: 1fr 1fr;
   }
 }
@@ -174,9 +169,6 @@
 /* Larger than tablet */ /* Larger than tablet */
 /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */ /* Larger than tablet */
 @media (min-width: 750px) {
- 
- 
-
   .landing-project-example {
     height: calc(100vh - 80px);
     margin: 0 -12% 0;
@@ -189,39 +181,24 @@
     width: 100%;
   }
 
-  /* Facebook button */
-  /* .fb-share-button {
-        background:var(--primary-color);
-    } */
 
- 
 }
 
 @media (min-width: 1000px) {
-
-
   .landing-project-example {
     margin: 0 -22% 0;
     overflow: hidden;
   }
- 
-
-  
 }
 
 /* Larger than Desktop HD */
 
 @media (min-width: 1200px) {
- 
- 
-
-  
 }
 @media (min-width: 1500px) {
-  .landing-project-example{
-   height: calc(100vh - 100px);
+  .landing-project-example {
+    height: calc(100vh - 100px);
   }
-  
 }
 
 /* IMAGE CHANGE ON MOBILE AND DESKTOP */

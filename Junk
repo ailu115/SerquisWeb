@@ -328,3 +328,41 @@ Projects nav
                    >
                         <h2 class="landing-link"> People</h2>
                     </div>
+
+
+
+
+HEADER WITH DIFERENT LOGO
+                      <!-- <header>
+    <div id="header-container">
+        <span id="logo" class="logo-header-landing">
+            <a href="index.html">
+
+                <img src="img/Logo/Icon-Serquis.png" alt="logo serquis + Associates Landscape Architecture">
+            </a></span>
+
+        <div id="menu-toggle" class="burger">
+            <div id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div id="cross">
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+
+        <nav class="">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="OurStory.html">About</a></li>
+                <li><a href="Work.html">Work</a></li>
+                <li><a href="News.html">News</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+
+</header>  -->

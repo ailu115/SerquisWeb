@@ -244,14 +244,7 @@
   .houzz-badges a:nth-last-child(1) {
     padding: 0 0px 0 0;
   }
-  /* .contact .landing h1 {
-    font-size: 2rem;
-    text-align: left;
-    padding: 0.1em 5%;
-    margin: 0 0 0 -5%;
-    background: var(--primary-color);
-    color: white;
-  } */
+
 }
 
 @media (min-width: 550px) {
@@ -282,7 +275,7 @@
   Header {
     margin: 0 auto;
     background: #fff;
- 
+
     height: 80px;
   }
   #header-container {
@@ -425,9 +418,7 @@
   .logo-header-landing {
     width: 6%;
   }
-  /* body {
-    font-size: 2em;
-  } */
+ 
   nav ul li a {
     font-size: 1.2rem;
   }
@@ -448,16 +439,15 @@
   header {
     height: 100px;
   }
-  :root{
+  :root {
     font-size: 1.2rem;
   }
   .logo-header {
     width: 25%;
   }
-
 }
 @media (min-width: 3000px) {
-  :root{
+  :root {
     font-size: 1.5rem;
   }
   .logo-header {

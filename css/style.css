@@ -87,6 +87,8 @@ section {
 
 /* MEDIA QUERIES! */
 
+
+
 @media screen and (min-width: 1px) {
   button,
   input[type="submit"],
@@ -104,7 +106,7 @@ section {
     margin: 1em 0 0.2em;
   }
   p {
-    font-size: 0.9em;
+    font-size: 0.9rem;
     font-weight: 300;
     padding: 0.5em 0.8em;
   }
@@ -116,13 +118,21 @@ section {
   }
   .landing {
     text-align: center;
-
     margin-bottom: 1em;
     padding-top: 1em;
     border-bottom: 2px solid var(--primary-color);
   }
   .index-main {
+    /* margin-bottom: 0; */
+    padding-top: 1em;
     border-bottom: 0px;
+    height: calc(100vh - 70vh - 60px );
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+
+  
   }
   .landing img {
     padding: 1em 1em 1em;
@@ -139,10 +149,13 @@ section {
   }
   /* .index-main */
   .index-main h1 {
-    font-size: 1.8em;
+    font-size: 1.8rem;
     letter-spacing: 0.1em;
     margin: 0 0 0.5em 0;
     line-height: 1.8em;
+    font-weight: 500;
+    color:var(--primary-color);
+    width: 100%;
   }
 
   .full-overflow {
@@ -159,11 +172,18 @@ section {
 
   .left {
     margin-left: -5vw;
-    /* padding-left: 10vw; */
+    padding-left: 10vw;
   }
 
+  .left .landing-photo img {
+    right: 50%;
+  }
+  .landing-photo-container {
+    position: relative;
+    z-index: -10;
+  }
   .landing-photo {
-    background-color: grey;
+    /* background-color: grey; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -172,27 +192,63 @@ section {
     background-repeat: no-repeat;
     filter: grayscale(100%) contrast(150%);
     height: 100vh;
+    z-index: -3;
+    
     /* position: relative; */
 
   }
   .landing-photo img{
     position: fixed;
-    bottom: 0;
+    bottom: 0 !important;
+    background-image: linear-gradient(
+                    -45deg,
+                    rgba(212, 212, 211, 0.1),
+                    rgba(87, 85, 84, 0.2));
+    /* top 0 !important; */
    left: 50%;
-   margin-left: calc( (-100vh*1.5) / 2);
+   margin-left: calc( (-100vh*1.77778) / 2);
     height: 100vh;
-    --widthimglanding: calc(90vh*1.5);
-    width: calc(100vh*1.5);
+    width: calc(100vh*1.7778);
+    /* width: 90vh;
+    height: 100%; */
     max-width: none;
+    /* display: block !important; */
+    /* z-index: -50; */
+  }
+/* IF IMG GOES ON BACKGROUND */
+ /* .landing-photo .img {
+  position: fixed;
+  bottom: 0 !important;
+ left: 50%;
+ margin-left: calc( (-100vh*1.77778) / 2);
+  height: 100%;
+  width: calc(100vh*1.7778);
+  max-width: none;
+  z-index: -50;
+   background-size: cover;
+ }  */
+ /* IF IMG GOES ON BACKGROUND */
+
+  .section1:hover .landing-photo{
+    filter: grayscale(0%) contrast(110%);
   }
 
-  .landing-photo:hover {
+  .section2:hover .landing-photo{
+    filter: grayscale(0%) contrast(110%);
+  }
+
+  .section3:hover .landing-photo{
     filter: grayscale(0%) contrast(110%);
   }
 
   .landing-link {
-    font-size: 1rem;
+  
+    color: white;
+    font-weight: 500;
+    font-size: 1.8rem;
+    padding: 0.2em 0;
   }
+  
   .section1 .landing-link {
     position: absolute;
     bottom: 0;
@@ -203,36 +259,36 @@ section {
     bottom: 0;
     right: 5vw;
   }
+
   .section2 .landing-link {
     position: absolute;
     bottom: 0;
     left: 10vw;
   }
 
-  .landing-photo h2 {
-    color: white;
-    font-weight: 500;
-    font-size: 1.8rem;
-    padding: 0.2em 0;
-  }
-
+  
   .section1 {
-    height: 68vh;
+    height: calc( 70vh - 1em);
     overflow: hidden;
     position: relative;
+    z-index: -1;
   }
 
   .section2 {
     height: 40vh;
     overflow: hidden;
     position: relative;
+    z-index: -2;
   }
 
   .section3 {
-    height: 60vh;
+    height: 70vh;
     overflow: hidden;
     position: relative;
+    z-index: -3;
+   
   }
+
 
   .info {
     grid-column: 1/5;
@@ -242,7 +298,7 @@ section {
     text-align: center;
   }
   .info p {
-    max-width: 1000px;
+    max-width: 2000px;
     text-align: left;
     margin: 0 auto;
   }
@@ -269,7 +325,7 @@ section {
     color: white;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 2rem;
     line-height: 1.5em;
     grid-column: 1/5;
   }
@@ -444,7 +500,7 @@ section {
   }
 
   .about .toggle-info .arrow-btn i {
-    font-size: 1em;
+    font-size: 1rem;
     border-radius: 50%;
     width: 1.5em;
     height: 1.5em;
@@ -479,7 +535,7 @@ section {
 
   .services strong {
     color: var(--primary-color);
-    font-size: 1.2em;
+    font-size: 1.2rem;
     line-height: 1.5em;
     margin-bottom: 0.2em;
   }
@@ -487,6 +543,9 @@ section {
 
   .testimonials {
     margin-top: 2em;
+  }
+  .testimonials h3{
+    text-align: center;
   }
 
   .mySlides {
@@ -513,7 +572,7 @@ section {
   .quote-icon {
     font-family: cursive;
     color: var(--primary-color);
-    font-size: 10em;
+    font-size: 10rem;
     padding-top: 0.3em;
     padding-bottom: 0;
     margin-bottom: -0.05em;
@@ -523,7 +582,7 @@ section {
   .quote-title {
     text-transform: uppercase;
     color: var(--text-dark);
-    font-size: 1.2em;
+    font-size: 1.2rem;
     padding: 0;
   }
   .quote p {
@@ -550,12 +609,18 @@ section {
 
   /* TESTIMONIAL */
 }
-
+/* PARA CELUS MUY CHICOS */
+@media screen and (max-width: 400px) {
+  .index-main h1 {
+    font-size: 1.5rem;
+}
+}
 /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */ /* Larger than mobile */
 
 @media (min-width: 550px) {
+  
   .index-main .landing h1 {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     letter-spacing: 0.3em;
   }
 
@@ -592,28 +657,35 @@ section {
     width: 60%;
     padding: 2em 0 1em;
   }
+  .index-main {
+ padding-top: 0;
+ /* margin-bottom: 0; */
+    height: calc(100vh - 70vh - 80px - 1em);
+  }
+
   .index-main h1 {
     font-size: 2rem;
     letter-spacing: 0.2em;
     margin-top: 0em;
     line-height: 1.5em;
-    padding: 0.5em 0 0 0;
+    padding: 1em 0 0 0;
+    
   }
 
   h1 {
-    font-size: 3em;
+    font-size: 3rem;
   }
 
   p {
-    font-size: 1em;
+    font-size: 1rem;
     font-weight: 300;
     padding: 0.5em 0;
   }
   .landing p {
     padding: 1em 10%;
   }
-  .landing-photo h2 {
-    font-size: 2rem;
+  .landing-link {
+    font-size: 2.2rem;
     padding: 0.2em 0;
   }
   .full-overflow {
@@ -629,8 +701,16 @@ section {
   }
 
   .left {
+    /* left: 0; */
     margin-left: -10vw;
     padding-left: 10vw;
+  }
+  .left .landing-photo img {
+    right: 50%;
+    bottom: 0;
+  }
+  .right .landing-photo img {
+    right: 0;
   }
   .section1 .landing-link {
     position: absolute;
@@ -649,7 +729,11 @@ section {
   }
 
   .section1 {
-    height: 55vh;
+    height: 70vh;
+  }
+
+  .section3 {
+    height: 60vh;
   }
 
   .quote {
@@ -811,6 +895,15 @@ section {
   #master-container {
     width: 70vw;
   }
+  .index-main {
+ 
+    height: calc(100vh - 76vh - 80px);
+  }
+  .index-main h1{
+    font-size: 2.5rem;
+  }
+ 
+
   .full-overflow {
     width: 100vw;
     margin: 0 -15vw;
@@ -827,25 +920,31 @@ section {
     margin-left: -15vw;
     padding-left: 15vw;
   }
-
+  
+.section1{
+  height: calc(76vh - 2em);
+}
   .section1 .landing-link {
     position: absolute;
     bottom: 0;
-    right: 15vw;
+    right: 20vw;
   }
   .section3 .landing-link {
     position: absolute;
     bottom: 0;
-    right: 15vw;
+    right: 20vw;
   }
   .section2 .landing-link {
     position: absolute;
     bottom: 0;
-    left: 15vw;
+    left: 20vw;
   }
 
   h2 {
-    font-size: 2.2em;
+    font-size: 2.2rem;
+  }
+  .landing-link{
+    font-size: 2.5rem;
   }
   .right .info-about {
     width: 100%;
@@ -890,11 +989,26 @@ section {
     font-size: 1.2rem;
   }
   #master-container {
-    max-width: 2500px;
+    /* max-width: 2500px; */
+    margin-top: 100px;
+
+  }
+  .index-main {
+ 
+    height: calc(100vh - 80vh - 100px - 1em);
+  }
+  .section1{
+    height: calc(80vh - 1em);
   }
 }
 
 @media (min-width: 3000px) {
+  #master-container {
+    max-width: 2500px;
+    margin-top: 150px;
+
+  }
+  
   :root {
     font-size: 1.5rem;
   }

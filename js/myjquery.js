@@ -117,5 +117,9 @@ AOS.init();
 // });
 
 
-$(window).stellar();
-
+$(window).stellar({
+  horizontalScrolling: false,
+  verticalOffset: 0,
+  horizontalOffset: 0,
+  responsive: true,
+});

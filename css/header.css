@@ -213,19 +213,17 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
-  
   }
   .social-media a {
     border-bottom: 0px;
     margin: 0.2em;
     padding: 1em 0.8em;
   }
-  .social-media i{
+  .social-media i {
     color: var(--primary-color);
     font-size: 1.8rem;
     background: rgba (255, 255, 255, 0.2);
   }
- 
 
   .social-media a:hover i {
     opacity: 0.5;
@@ -246,7 +244,6 @@
   .houzz-badges a:nth-last-child(1) {
     padding: 0 0px 0 0;
   }
-
 }
 
 @media (min-width: 550px) {
@@ -422,7 +419,7 @@
   .logo-header-landing {
     width: 6%;
   }
- 
+
   nav ul li a {
     font-size: 1.2rem;
   }

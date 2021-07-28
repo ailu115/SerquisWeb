@@ -116,7 +116,7 @@
 }
 .photos-project .photo img {
   margin: 0 auto;
-  max-height: 675px;
+  /* max-height: 675px; */
 }
 
 /* TAGS */
@@ -239,9 +239,12 @@ video.video-responsive::before {
   }
 }
 
+
 @media (min-width: 3000px) {
   .landing-project-example {
     height: calc(100vh - 150px);
+    max-width: 2500px;
+    margin: 0 auto;
   }
 }
 

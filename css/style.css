@@ -662,7 +662,7 @@ section {
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   p {
@@ -888,11 +888,12 @@ section {
     width: 70vw;
   }
   .index-main {
-    height: calc(100vh - 76vh - 80px);
+    height: calc(100vh - 72vh - 80px);
   }
   .index-main h1 {
     font-size: 2rem;
   }
+  
 
   .full-overflow {
     width: 100vw;
@@ -929,7 +930,7 @@ section {
       }
 
   .section1 {
-    height: calc(76vh - 2em);
+    height: calc(72vh - 2em);
   }
   .section1 .landing-link {
     position: absolute;
@@ -1001,6 +1002,9 @@ section {
   .index-main h1 {
     font-size: 2.4rem;
   }
+  h1 {
+    font-size: 3rem;
+  }
 
   .index-main {
     height: calc(100vh - 80vh - 100px - 1em);
@@ -1016,7 +1020,7 @@ section {
 
 @media (min-width: 3000px) {
   #master-container {
-    /* max-width: 2500px; */
+    max-width: 2500px;
     margin-top: 150px;
   }
 
@@ -1024,9 +1028,9 @@ section {
     font-size: 1.5rem;
   }
   .index-main {
-    height: calc(100vh - 80vh - 150px - 1em);
+    height: calc(100vh - 75vh - 150px - 1em);
   }
   .section1 {
-    height: calc(80vh - 1em);
+    height: calc(75vh - 1em);
   }
 }

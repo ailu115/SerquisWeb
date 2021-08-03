@@ -76,10 +76,13 @@
   nav ul li a {
     font-size: 2rem;
     color: #fff;
+    
   }
   header nav ul li a:hover {
     color: #e0e1e3;
     text-decoration: underline;
+    transition-delay:  5s;
+    opacity: 1;
   }
   /*MENU HAMBURGESA*/
   /*#menu-toggle, #hamburger,*/
@@ -315,25 +318,27 @@
     align-items: center;
   }
   nav li {
-    margin-left: 1%;
     box-sizing: border-box;
     text-align: right;
     padding: 1em;
   }
-  nav li:first-child {
+  /* nav li:first-child {
     margin-left: 0;
-  }
+  } */
   nav ul li a {
     font-size: 1rem;
     font-weight: 300;
-    color: var(--text-dark);
+    color: var(--text-medium);
+   
   }
 
   header nav ul li a:hover {
-    color: var(--text-medium);
+    color: var(--text-dark);
     text-decoration: underline;
+    transition-delay: 10s;
   }
-  header nav ul li a:active {
+
+  header nav ul .active a {
     color: var(--primary-color);
     text-decoration: underline;
   }

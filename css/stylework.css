@@ -31,15 +31,20 @@
 }
 .projects-nav ul li:hover {
   border-bottom: 0.2em solid rgba(143, 148, 39, 0.8);
+  transition-delay: 1s ease-in-out;
 }
 .projects-nav ul li:hover a {
   color: rgba(143, 148, 39, 0.8);
+  transition-delay: 1s ease-in-out;
 }
 
-.projects-nav ul li:active {
+
+
+.projects-nav ul .active {
   border-bottom: 0.2em solid var(--primary-color);
+  
 }
-.projects-nav ul li:active a {
+.projects-nav ul .active a {
   color: var(--primary-color);
 }
 

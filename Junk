@@ -418,3 +418,24 @@ INTENTO HEIGHT AnimadoINTENTO HEIGHT AnimadoINTENTO HEIGHT AnimadoINTENTO HEIGHT
 //       icon.style.transform = "rotate(0turn)";
 //   }
 // }
+
+  <div class="toggle-info partners">
+                <h3>Prefered Partners
+                    <a id="iconarrow" onclick="toggleAbout('partners')">
+                        <i id="icon-arrow-partners" class="las la-angle-down" style="transform: rotate(0turn)"></i>
+                    </a>
+                </h3>
+                <div class="toggle-items" id="partners" style="display: none;">
+                    <ul>
+                        <li>
+                            <b><a href="#"> Plants of the South West </a></b>Nursery
+                        </li>
+                        <li>
+                            <b><a href="#">  </a></b>Nursery
+                        </li>
+                        <li>
+                            <b><a href="#"> Plants of the South West </a></b>Nursery
+                        </li>
+                    </ul>
+                </div>
+            </div>

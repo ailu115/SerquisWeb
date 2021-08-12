@@ -89,9 +89,9 @@
   font-size: 3rem;
 }
 .project-example-description {
-  grid-column: 1/5;
+  /* grid-column: 1/5;
   grid-row: 2/3;
-  text-align: center;
+  text-align: center; */
 }
 #more {
   display: none;
@@ -106,7 +106,7 @@
   text-align: center;
 }
 .photos-project {
-  grid-column: 1/5;
+ 
   height: auto;
   margin: 0 0%;
   display: block;

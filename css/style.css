@@ -360,9 +360,17 @@ section {
     color: var(--text-medium);
   }
 
+  .logos-press .logos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 .logos-press img{
+  height: 4em;
   opacity: 0.6;
+  /* width: 30%; */
   margin: 0 auto;
+  mix-blend-mode: multiply;
 }
 
 
@@ -514,12 +522,11 @@ section {
   }
 
   .about .toggle-info .arrow-btn i {
-    /* font-size: 1rem; */
+  
     border-radius: 50%;
     width: 1.5em;
     height: 1.5em;
     padding: 0.2em;
-
     text-align: center;
     line-height: 1em;
     vertical-align: middle;
@@ -532,7 +539,9 @@ section {
     line-height: 1.2em;
     padding: 0.2em 0.8em;
     background: white;
+   
   }
+
   .toggle-items ul li {
     list-style-type: disc;
     list-style-position: inside;
@@ -809,6 +818,9 @@ section {
     text-align: left;
     padding: 0 1em;
     align-self: end;
+  }
+  .logos-press img{
+    height: 3em;
   }
 
   .index-main h3 {
